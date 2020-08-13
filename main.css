@@ -1,0 +1,144 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.skills {
+    background-color: aquamarine;
+    vertical-align: center;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-weight: 500;
+    transition: 0.4s;
+}
+.skills:hover {
+    opacity: 0.6;
+}
+.skill-text {
+    font-size: 48px;
+    font-weight: 600;
+}
+/* #skill-container {
+
+} */
+h2 {
+    font-size: 92px;
+    color: aquamarine;
+    font-weight: 600;
+}
+h3 {
+    font-size: 64px;
+    color: rgb(232, 232, 232);
+    font-weight: 600;
+}
+.section {
+    padding-left: 60px;
+    padding-top: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-size: 24px;
+}
+.contacts {
+    text-align: center;
+    transition: 0.6s;
+    border-radius: 10px;
+}
+.contacts:hover {
+    background-color: salmon;
+}
+.header {
+    padding-bottom: 40px;
+}
+.subheader {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: salmon;
+}
+
+.blank {
+    height: 40px;
+}
+
+.divider {
+    height: 40px;
+}
+/* Source Code Button */
+
+.source {
+    padding: 40px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.source:hover {
+    opacity: 0.6;
+}
+
+/* .divcol {
+    height: 50px;
+    background-color: aquamarine;
+}
+.divider {
+    background-color: aquamarine;
+    height: 50px; 
+}*/
+
+
+/* Sidebar */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+#mySidebar {
+    width: 40px;
+}
+
+  /* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 52px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    color: purple;
+}
+
+#closedSidebar {
+    height: 100%; /* 100% Full-height */
+    width: 50px;  /* width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: auto; /* Disable horizontal scroll */
+    transition: 0.5s;
+    color: black;
+    text-align: center;
+    font-size: 38px;
+    padding-top: 10px;
+    background-color: salmon;
+}
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    overflow-x: hidden;
+    margin-left: 0px;
+}
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
