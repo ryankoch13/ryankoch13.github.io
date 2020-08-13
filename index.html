@@ -22,6 +22,7 @@
         style="background-image:url(https://images.unsplash.com/photo-1513343041531-f73bffeed81b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2828&q=80); background-position:left bottom; color:white;">
             <h1 class="display-4" style="font-size:128px; font-weight:900" id="head1">Ryan Koch here.</h1>
             <h3 style="font-weight:600; font-size:84px; padding-bottom: 40px" id="head2">Welcome to my personal site -- please enjoy this sample of my design philosphy and code :]</h2>
+                <div class="row blank"><div class="col-md-12"></div></div>
                 <div class="row">
             <div class="col-md-1"></div><div class="col-md-10 source"><h3 style="font-weight:800" id="typed"></h3></div>
             </div>
@@ -206,7 +207,7 @@
         const section3 = document.querySelector('#head2')
         // Scrolling color changer
         window.addEventListener('scroll', () => {
-        let y = 0 + (window.scrollY || window.pageYOffset) / 140
+        let y = 1 + (window.scrollY || window.pageYOffset) / 120
         y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
         let [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
         section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
