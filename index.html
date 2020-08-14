@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <!-- If you're reading this, you must like to code. That's so cool, me too! I hope you like my source code. -->
 </head>
 
 <body class="body" id="body" style="background-color:black; color:white">
@@ -31,8 +32,7 @@
                     <div class="col-md-12"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-10 source">
+                    <div class="col-md-10 offset-lg-2 source">
                         <h3 style="font-weight:800" id="typed"></h3>
                     </div>
                 </div>
@@ -213,12 +213,15 @@
         <div class="fluid-container section">
             <h2 class="header" id="contact">Contact Me.</h2>
             <!-- Contains full contact section -->
-            <div class="row">
+            <div class="row d-flex">
+                <!-- Contact Badges -->
                 <div class="col-md-5 icon-side">
                     <div class="row contact-row">
                         <div class="col-lg-12 contacts"><a href="https://github.com/ryankoch13">
                                 <h3>GitHub</h3>
                             </a></div>
+                        </div>
+                        <div class="row contact-row">
                         <div class="col-lg-12 contacts"><a href="https://www.linkedin.com/in/ryan-koch-339b91199/">
                                 <h3>LinkedIn</h3>
                             </a></div>
@@ -227,6 +230,8 @@
                         <div class="col-lg-12 contacts">
                             <h3>Email</h3>
                         </div>
+                    </div>
+                    <div class ="row contact-row">
                         <div class="col-lg-12 contacts">
                             <h3>Phone</h3>
                         </div>
@@ -235,18 +240,18 @@
                         <img src="./keanu.jpg" class="col-lg-12" alt="Neo in the Matrix">
                     </div> -->
                 </div>
-                <div class="col-md-7" style="border-radius:10px">
-                    <!-- FORM  -->
+                <!-- FORM  -->
+                <div class="col-md-6 offset-md-1" style="border-radius:10px">
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-5">
                                 <label for="inputEmail4">
                                     <h3>Name.</h3>
                                 </label>
                                 <input type="text" class="form-control" id="inputNameC" placeholder="Name"
                                     style="font-size:28px">
                             </div>
-                            <div class="form-group col-md-8">
+                            <div class="form-group col-md-7">
                                 <label for="inputEmailC">
                                     <h3>Email.</h3>
                                 </label>
@@ -331,7 +336,7 @@
         const section3 = document.querySelector('#head2')
         // Scrolling color changer
         window.addEventListener('scroll', () => {
-            let y = 1 + (window.scrollY || window.pageYOffset) / 120
+            let y = 0 + (window.scrollY || window.pageYOffset) / 100
             y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
             let [r, g, b] = [red / y, green / y, blue / y].map(Math.round)
             section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`

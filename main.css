@@ -87,6 +87,9 @@ p {
 .source:hover #typed {
     color: white;
 }
+.icon-side {
+    align-items:center;
+}
 
 /* .divcol {
     height: 50px;
