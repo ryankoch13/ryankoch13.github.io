@@ -1,6 +1,8 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* This should really be the default option. It's so much better */
 }
+
+/* Main font stylings */
 h2 {
     font-size: 92px;
     color: aquamarine;
@@ -17,6 +19,27 @@ p {
     line-height: 200%;
 }
 
+/* Major classes */
+.section {
+    padding-left: 100px;
+    padding-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 100px;
+}
+
+/* Special font stylings */
+.header {
+    padding-bottom: 40px;
+}
+.subheader {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: salmon;
+}
+
+/* Specific section stylings */
+
+/* Skills */
 .skills {
     background-color: aquamarine;
     vertical-align: center;
@@ -33,15 +56,10 @@ p {
     font-size: 48px;
     font-weight: 600;
 }
-/* #skill-container {
 
-} */
-
-.section {
-    padding-left: 100px;
-    padding-top: 40px;
-    font-family: 'Raleway', sans-serif;
-    padding-right: 100px;
+/* Contacts */
+.icon-side {
+    align-items:center;
 }
 .contacts {
     text-align: center;
@@ -52,32 +70,28 @@ p {
 .contacts:hover {
     background-color: salmon;
 }
-.header {
-    padding-bottom: 40px;
-}
-.subheader {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: salmon;
-}
 
+
+/* Divder rows */
 .blank {
-    height: 80px;
+    height: 100px;
 }
-
-.divider {
-    height: 40px;
+/* .edge {
+    background-image: url('./waves.gif');
 }
-/* Source Code Button */
+.edge2 {
+    background-image: url('./giphy.gif')
+} */
 
+/* Typewriter Button(formerly view source code button lol) */
 .source {
     padding: 40px;
-    background-color: aquamarine;
+    background-color: aquamarine; 
     border-radius: 10px;
     transition: 0.4s;
 }
 .source:hover {
-    background-image: url('./aquacircle.gif');
+    background-image: url('./aquacircle.gif'); /* Pretty lights on hover */
     background-position: center;
     opacity: 0.8;
 }
@@ -87,18 +101,6 @@ p {
 .source:hover #typed {
     color: white;
 }
-.icon-side {
-    align-items:center;
-}
-
-/* .divcol {
-    height: 50px;
-    background-color: aquamarine;
-}
-.divider {
-    background-color: aquamarine;
-    height: 50px; 
-}*/
 
 
 /* Sidebar */
@@ -117,7 +119,7 @@ p {
     width: 40px;
 }
 
-  /* The sidebar links */
+/* The sidebar links */
 .sidebar a {
     padding: 8px 8px 8px 52px;
     text-decoration: none;
@@ -132,36 +134,37 @@ p {
 }
 
 #closedSidebar {
-    height: 100%; /* 100% Full-height */
+    height: 100%; /* Full height */
     width: 50px;  /* width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    overflow-x: auto; /* Disable horizontal scroll */
+    overflow-x: auto; /* No scroll */
     transition: 0.5s;
     color: black;
     text-align: center;
     font-size: 38px;
     padding-top: 10px;
-    background-color: salmon;
+    background-color: salmon; /* To give you that warm, Miami in the 80's feel */
 }
 
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* Main section */
 #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    overflow-x: hidden;
+    transition: margin-left .5s; /* Sidebar transition */
+    overflow-x: hidden; /* No Scroll */
     margin-left: 40px;
 }
 
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
 }
 #about {
-    width: 1000px;
+    width: 1000px; /* Don't want to wear out people's eyes */
 }
+
 #head2 {
-    line-height: 150%;
+    line-height: 130%; /* The main headline was looking kinda squished. */
 }

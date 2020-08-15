@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Hello! I'm Ryan</title>
+    <!-- Wow, I'm lame. -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:ital,wght@0,400;0,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <!-- If you're reading this, you must like to code. That's so cool, me too! I hope you like my source code. -->
+    <!-- If you're reading this, you must like to code. That's so cool, me too! I hope you like my website. Definitely try out the font Raleways on your next project. I'm a BIG fan. -->
 </head>
-
+<!-- Everything pretty much -->
 <body class="body" id="body" style="background-color:black; color:white">
+    <!-- Sidebar start -->
     <div id="mySidebar" class="sidebar" onmouseleave="closeNav()">
         <a href="#about">About Me.</a>
         <a href="#technical">Technical Qualifications.</a>
         <a href="#portfolio">Portfolio.</a>
         <a href="#contact">Contact Me.</a>
     </div>
-
+<!-- Main start -->
     <div id="main">
         <div id="closedSidebar" onmouseover="openNav()">&#9776;</div>
+        <!-- Hero start -->
         <div id="landing" class="jumbotron jumbotron-fluid section"
-            style="background-image:url(https://images.unsplash.com/photo-1513343041531-f73bffeed81b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2828&q=80); background-position:left bottom; color:white">
+            style="background-image:url(https://images.unsplash.com/photo-1513343041531-f73bffeed81b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2828&q=80); background-position:left bottom; color:white; margin-bottom: 0px">
             <h1 class="display-4" style="font-size:128px;font-weight:900" id="head1">Ryan Koch here.</h1>
             <h2 style="padding-bottom: 40px; color: white" id="head2">Welcome to my personal
                 site -- please enjoy this sample of my design philosphy and code :]</h2>
@@ -40,6 +43,7 @@
         <div class="row blank">
             <div class="col-md-12"></div>
         </div>
+        <!-- About start -->
         <div class="container-fluid section">
             <h2 class="header">About Me.</h2>
             <div id="about">
@@ -68,11 +72,10 @@
             </div>
         </div>
         <div class="row blank">
-            <div class="col-md-12"></div>
+            <div class="col-md-12 edge2"></div>
+            <!-- <div class="col-md-10 edge"></div> -->
         </div>
-        <div class="row divider">
-            <div class="col-md-12 divElement" id="div1"></div>
-        </div>
+        <!-- Skills start -->
         <div class="fluid-container section" id="skill-container">
             <h2 class="header" id="technical">Technical Qualifications.</h2>
             <div class="row title-row">
@@ -109,12 +112,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row skill-row" style="height:20vh">
-                <div class="col-xs-12 col-md-6 col-lg-3 skills">skill</div>
-                <div class="col-xs-12 col-md-6 col-lg-3 skills">skill</div>
-                <div class="col-xs-12 col-md-6 col-lg-3 skills">skill</div>
-                <div class="col-xs-12 col-md-6 col-lg-3 skills">skill</div>
-            </div> -->
             <div class="row title-row">
                 <div class="col-12">
                     <h3><span class="subheader">Back-End.</span> (Hover)</h3>
@@ -149,16 +146,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row skill-row" style="height:20vh">
-                <div class="col-xs-12 col-md-6 col-lg-3 skills">skill</div>
-                <div class="col-xs-12 col-md-6 col-lg-3 skills">skill</div>
-                <div class="col-xs-12 col-md-6 col-lg-3 skills">skill</div>
-                <div class="col-xs-12 col-md-6 col-lg-3 skills">skill</div>
-            </div> -->
         </div>
         <div class="row blank">
-            <div class="col-md-12"></div>
+            <div class="col-md-12 edge"></div>
         </div>
+        <!-- Portfolio start -->
         <div class="fluid-container section">
             <h2 class="header" id="portfolio">Portfolio.</h2>
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -205,11 +197,12 @@
             </div>
         </div>
         <div class="row blank">
-            <div class="col-md-12"></div>
+            <div class="col-md-12 edge"></div>
         </div>
         <div class="row blank">
             <div class="col-md-12"></div>
         </div>
+        <!-- Contact start -->
         <div class="fluid-container section">
             <h2 class="header" id="contact">Contact Me.</h2>
             <!-- Contains full contact section -->
@@ -295,6 +288,7 @@
     <footer>
 
     </footer>
+    <!-- Library import -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -305,16 +299,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <!-- Scripts -->
     <script>
+        // Portfolio hover change
         function hover(element) {
             element.setAttribute('src', './code-example.png');
         }
-
         function unhover(element) {
             element.setAttribute('src', './ui-example.png');
         }
-    </script>
-    <script>
+    // Sidebar scripts
+    //Opens sidebar on hover over
         function openNav() {
             document.getElementById("mySidebar").style.width = "260px";
             document.getElementById("main").style.marginLeft = "260px";
@@ -322,7 +317,7 @@
             document.getElementById("closedSidebar").style.backgroundColor = "#ffae96";
         }
 
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        // Sets the width of the sidebar to 50 and the left margin of the page content to 40
         function closeNav() {
             document.getElementById("mySidebar").style.width = "50px";
             document.getElementById("closedSidebar").style.width = "50px";
@@ -330,38 +325,36 @@
             document.getElementById("mySidebar").style.backgroundColor = "salmon";
             document.getElementById("closedSidebar").style.backgroundColor = "salmon";
         }
+        // Body background and hero text color changer
         const [red, green, blue] = [255, 255, 255]
         const section1 = document.querySelector('.body')
         const section2 = document.querySelector('#head1')
         const section3 = document.querySelector('#head2')
-        // Scrolling color changer
         window.addEventListener('scroll', () => {
-            let y = 0 + (window.scrollY || window.pageYOffset) / 100
+            let y = 1 + (window.scrollY || window.pageYOffset) / 130  // Transition rate and initial value for scroll color
             y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
             let [r, g, b] = [red / y, green / y, blue / y].map(Math.round)
-            section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-
-            section2.style.color = `rgb(${r}, ${g}, ${b})`
-
-            section3.style.color = `rgb(${r}, ${g}, ${b})`
+            section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})` // Assigning scroll offset to background of main
+            section2.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the main header
+            section3.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the co-main header
         })
         // Typewriter
         var typed = new Typed('#typed', {
             strings: ['I am passionate about... presence.', 'I am passionate about... coding.',
                 'I love... live music.', 'I enjoy... problem solving.', 'I escape with... weightlifting.',
                 'I seek... consciousness.', 'I would love... to meet you.'
-            ],
-            typeSpeed: 50,
-            backSpeed: 60,
-            startDelay: 100,
+            ], //My sentences
+            typeSpeed: 50, //How fast it types (higher = slower)
+            backSpeed: 60, //How fast it backspaces (higher = slower)
+            startDelay: 100, 
             loop: true,
             showCursor: false
         });
-        // Tooltips
+        // Tooltip enable
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 </body>
-
+<!-- That's all for now, folks! -->
 </html>
