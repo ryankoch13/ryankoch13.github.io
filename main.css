@@ -4,17 +4,17 @@ html {
 
 /* Main font stylings */
 h2 {
-    font-size: 92px;
+    font-size: 72px;
     color: aquamarine;
     font-weight: 600;
 }
 h3 {
-    font-size: 64px;
+    font-size: 56px;
     color: rgb(232, 232, 232);
     font-weight: 600;
 }
 p {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 175%;
 }
@@ -52,6 +52,7 @@ p {
     font-weight: 500;
     transition: 0.4s;
     height: 200px;
+    padding-top: 16px;
 }
 .skills:hover {
     opacity: 0.6;
@@ -67,7 +68,7 @@ p {
     /* background-image: url('./project-icon.png'); */
     /* height: 500px; */
     border-radius: 10px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
     opacity: 1;
@@ -108,6 +109,7 @@ p {
     transition: 0.6s;
     border-radius: 10px;
     margin-bottom: 78px;
+    padding-top: 10px;
 }
 .contacts:hover {
     background-color: salmon;
@@ -169,7 +171,7 @@ p {
 .sidebar a {
     padding: 8px 8px 8px 52px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     color: black;
     display: block;
