@@ -44,9 +44,9 @@
             <div class="col-md-12"></div>
         </div>
         <!-- About start -->
-        <div class="container-fluid section">
+        <div class="container-fluid section" id="about">
             <h2 class="header">About Me.</h2>
-            <div id="about">
+            <div id="about-text">
                 <h3 class="subheader">More than a job. </h3>
                 <p>Hi, my name is Ryan Koch, and I am a web developer in San Diego.</p>
                 <p>For me, that means I get to do some of my favorite things in the world, nerd out about technology and
@@ -86,7 +86,7 @@
             <div class="row blank">
                 <div class="col-md-12"></div>
             </div>
-            <div class="row skill-row" style="height:20vh">
+            <div class="row skill-row">
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <div class="col-lg-12 skills" data-toggle="tooltip" data-placement="right" data-html="true"
                         title="<p>I've worked with HTML & CSS for almost a year now. I actually really like designing webpages, even though I consider myself more of a back-end developer.</p>">
@@ -120,7 +120,7 @@
             <div class="row blank">
                 <div class="col-md-12"></div>
             </div>
-            <div class="row skill-row" style="height:20vh">
+            <div class="row skill-row">
                 <div class="col-xs-12 col-md-6 col-lg-3">
                     <div class="col-lg-12 skills" data-toggle="tooltip" data-placement="right" data-html="true"
                         title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
@@ -153,49 +153,58 @@
         <!-- Portfolio start -->
         <div class="fluid-container section">
             <h2 class="header" id="portfolio">Portfolio.</h2>
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./ui-example.png" class="d-block w-100" alt="sample code" onmouseover="hover(this)"
-                            onmouseout="unhover(this)" style="height:60vh">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>UFC API</h3>
-                            <p>Using ReactJS and Ruby on Rails, my roommate and I were able to calculate stastical odds
-                                for UFC fight outcomes using Wikipedia data on fighter wins and losses.</p>
+        <div class="row project-row">
+                <div class="col-lg-3 col-sm-5 col-xs-12 project">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            War - The Card Game
+                        </div>
+                        <div class="col-lg-12 project-title">
+                            {       }
+                        </div>
+                        <div class="col-lg-12 source-link">
+                            Source Code
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./ui-example.png" class="d-block w-100" alt="sample code" onmouseover="hover(this)"
-                            onmouseout="unhover(this)" style="height:60vh">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Capstone Project</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./ui-example.png" class="d-block w-100" alt="code example" onmouseover="hover(this)"
-                            onmouseout="unhover(this)" style="height:60vh">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>War</h3>
-                            <p>The game of war.</p>
-                        </div>
-                    </div>
+                    
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="col-lg-3 col-sm-5 col-xs-12 project">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            UFC Stats API
+                        </div>
+                        <div class="col-lg-12 project-title">
+                            {       }
+                        </div>
+                        <div class="col-lg-12 source-link">
+                            Source Code
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-sm-5 col-xs-12 project">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Wildlife Tracker
+                        </div>
+                        <div class="col-lg-12 project-title">
+                            {       }
+                        </div>
+                        <div class="col-lg-12 source-link">
+                            Source Code
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
+
+
+
+
+
+
+
         <div class="row blank">
             <div class="col-md-12 edge"></div>
         </div>
@@ -210,12 +219,12 @@
                 <!-- Contact Badges -->
                 <div class="col-md-5 icon-side">
                     <div class="row contact-row">
-                        <div class="col-lg-12 contacts"><a href="https://github.com/ryankoch13">
+                        <div class="col-lg-12 contacts"><a href="https://github.com/ryankoch13" class="link">
                                 <h3>GitHub</h3>
                             </a></div>
                         </div>
                         <div class="row contact-row">
-                        <div class="col-lg-12 contacts"><a href="https://www.linkedin.com/in/ryan-koch-339b91199/">
+                        <div class="col-lg-12 contacts"><a href="https://www.linkedin.com/in/ryan-koch-339b91199/" class="link">
                                 <h3>LinkedIn</h3>
                             </a></div>
                     </div>
@@ -313,8 +322,8 @@
         function openNav() {
             document.getElementById("mySidebar").style.width = "260px";
             document.getElementById("main").style.marginLeft = "260px";
-            document.getElementById("mySidebar").style.backgroundColor = "#ffae96";
-            document.getElementById("closedSidebar").style.backgroundColor = "#ffae96";
+            document.getElementById("mySidebar").style.backgroundColor = "salmon";
+            document.getElementById("closedSidebar").style.backgroundColor = "salmon";
         }
 
         // Sets the width of the sidebar to 50 and the left margin of the page content to 40

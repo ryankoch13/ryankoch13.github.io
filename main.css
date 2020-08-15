@@ -16,15 +16,15 @@ h3 {
 p {
     font-size: 28px;
     font-weight: 500;
-    line-height: 200%;
+    line-height: 175%;
 }
 
 /* Major classes */
 .section {
-    padding-left: 100px;
+    padding-left: 120px;
     padding-top: 40px;
     font-family: 'Raleway', sans-serif;
-    padding-right: 100px;
+    padding-right: 120px;
 }
 
 /* Special font stylings */
@@ -40,6 +40,9 @@ p {
 /* Specific section stylings */
 
 /* Skills */
+.skill-row {
+    height: 300px;
+}
 .skills {
     background-color: aquamarine;
     vertical-align: center;
@@ -48,6 +51,7 @@ p {
     color: black;
     font-weight: 500;
     transition: 0.4s;
+    height: 200px;
 }
 .skills:hover {
     opacity: 0.6;
@@ -55,6 +59,44 @@ p {
 .skill-text {
     font-size: 48px;
     font-weight: 600;
+}
+
+/* Portfolio */
+
+.project {
+    /* background-image: url('./project-icon.png'); */
+    /* height: 500px; */
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 1;
+    color: salmon;
+    transition: 0.5s;
+}
+.project:hover {
+    background-color: white;
+    color: black;
+}
+.project:hover .source-link {
+    background-color: salmon;
+}
+
+
+.project-title {
+    font-size: 256px;
+}
+.project-row {
+    justify-content: space-between;
+}
+.project-link {
+    background-color: white;
+    border-radius: 10px;
+}
+.source-link {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
 }
 
 /* Contacts */
@@ -69,6 +111,10 @@ p {
 }
 .contacts:hover {
     background-color: salmon;
+    color: black;
+}
+.link {
+    text-decoration: none !important;
 }
 
 
@@ -161,8 +207,8 @@ p {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
 }
-#about {
-    width: 1000px; /* Don't want to wear out people's eyes */
+#about-text {
+    width: 860px; /* Don't want to wear out people's eyes */
 }
 
 #head2 {
