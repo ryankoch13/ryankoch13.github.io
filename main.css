@@ -21,10 +21,10 @@ p {
 
 /* Major classes */
 .section {
-    padding-left: 120px;
+    padding-left: 260px;
+    padding-right: 260px;
     padding-top: 40px;
     font-family: 'Raleway', sans-serif;
-    padding-right: 120px;
 }
 
 /* Special font stylings */
@@ -58,12 +58,22 @@ p {
     opacity: 0.6;
 }
 .skill-text {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 /* Portfolio */
 
+/* Custom padding for portfolio section */
+#portfolio-section {
+    padding-left: 180px;
+    padding-right: 180px;
+}
+#portfolio-header {
+    padding-left: 80px;
+}
+
+/* Project Tiles */
 .project {
     /* background-image: url('./project-icon.png'); */
     /* height: 500px; */
@@ -80,7 +90,8 @@ p {
     color: black;
 }
 .project:hover .source-link {
-    background-color: salmon;
+    background-color: darksalmon;
+    color: white;
 }
 
 
