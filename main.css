@@ -233,6 +233,14 @@ p {
     width: 860px; /* Don't want to wear out people's eyes */
 }
 
+#head1 {
+    font-size: 96px;
+    font-weight: 900;
+    padding-top: 40px;
+}
+
 #head2 {
     line-height: 130%; /* The main headline was looking kinda squished. */
+    padding-bottom: 40px; 
+    color: white;
 }
