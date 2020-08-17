@@ -240,8 +240,11 @@ p {
     background-color: salmon; /* To give you that warm, Miami in the 80's feel */
 }
 
+/* Scrollbar */
 
+.mb-track { border-radius: 10px; }
 
+.mb-bar { background-color: #4C9689; }
 
 
 #about-text {
@@ -260,18 +263,26 @@ p {
     color: white;
 }
 
+/* Mediaqueries */
 /* Mobile */
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 576px) {
+    .skill-row {
+    margin-bottom: 1200px;
+    }
+}
+@media screen and (max-width: 768px) {
     .sidebar {padding-top: 15px;transition: 0.3s;}
     .sidebar a {font-size: 18px;}
-    html {overflow-x: scroll;}
+    html {overflow-x: auto;}
+    h2 {font-size: 48px;}
+    h3 {font-size:36px;}
     #main {overflow-x: scroll;}
     .section {padding-left: 20px;padding-right:20px;}
     #head2 {color: white !important; font-size: 48px;}
     #head1 {font-size: 56px;}
     .source {width: 400px}
     #about-text {
-        width: 400px;
+        width: 320px;
     }
     #portfolio {
         padding-left: 18px;padding-right:18px;
@@ -283,15 +294,20 @@ p {
         margin-top: 20px;
     }
     .skill-row {
-        margin-bottom: 800px;
+        margin-bottom: 1000px;
+    }
+    .subheader {
+        margin-top: 200px;
     }
 }
 
 /* Tablet */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 992px) {
     .sidebar {padding-top: 30px;transition: 0.3s;}
     .sidebar a {font-size: 18px;}
-    html {overflow-x: scroll;}
+    html {overflow-x: auto;}
+    h2 {font-size:64px;}
+    h3{font-size:48px;}
     #main {overflow-x: scroll;}
     .section {padding-left: 40px;padding-right: 40px}
     .source {width: 800px}
@@ -310,33 +326,29 @@ p {
         margin-top: 20px;
     }
     .skill-row {
-        margin-bottom: 600px;
+        margin-bottom: 800px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .sidebar {padding-top: 30px;transition: 0.3s;}
-    .sidebar a {font-size: 18px;}
-    html {overflow-x: scroll;}
-    #main {overflow-x: scroll;}
     .section {padding-left: 80px;padding-right: 80px}
     .source {width: 800px}
-    #head2 {color: white !important; font-size: 64px;}
-    #head1 {font-size: 72px;}
+    /* #head2 {color: white !important; font-size: 64px;}
+    #head1 {font-size: 72px;} */
     #about-text {
         width : 800px;
     }
     #portfolio {
-        padding-left: 36px;padding-right:36px;align-items:center;
+        padding-left: 66px;padding-right:66px;align-items:center;
     }
     #portfolio-header {
-        padding-left: 4px;
+        padding-left: 14px;
     }
     .title-row {
         margin-top: 20px;
     }
     .skill-row {
-        margin-bottom: 400px;
+        margin-bottom: 480px;
     }
 }
 
