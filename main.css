@@ -9,15 +9,29 @@ h2 {
     color: aquamarine;
     font-weight: 600;
 }
+
 h3 {
     font-size: 56px;
     color: rgb(232, 232, 232);
     font-weight: 600;
 }
+
 p {
     font-size: 24px;
     font-weight: 500;
     line-height: 175%;
+}
+
+/* Main section */
+#main {
+    transition: margin-left .5s; /* Sidebar transition */
+    overflow-x: hidden; /* No Scroll */
+    margin-left: 40px;
+}
+
+#main ::selection {
+    background-color: darksalmon;
+    color: white;
 }
 
 /* Major classes */
@@ -53,7 +67,7 @@ p {
     font-weight: 500;
     transition: 0.4s;
     height: 200px;
-    padding-top: 16px;
+    padding-top: 48px;
 }
 .skills:hover {
     opacity: 0.6;
@@ -226,18 +240,10 @@ p {
     background-color: salmon; /* To give you that warm, Miami in the 80's feel */
 }
 
-/* Main section */
-#main {
-    transition: margin-left .5s; /* Sidebar transition */
-    overflow-x: hidden; /* No Scroll */
-    margin-left: 40px;
-}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-}
+
+
+
 #about-text {
     width: 860px; /* Don't want to wear out people's eyes */
 }
@@ -253,3 +259,84 @@ p {
     padding-bottom: 40px; 
     color: white;
 }
+
+/* Mobile */
+@media screen and (max-width: 860px) {
+    .sidebar {padding-top: 15px;transition: 0.3s;}
+    .sidebar a {font-size: 18px;}
+    html {overflow-x: scroll;}
+    #main {overflow-x: scroll;}
+    .section {padding-left: 20px;padding-right:20px;}
+    #head2 {color: white !important; font-size: 48px;}
+    #head1 {font-size: 56px;}
+    .source {width: 400px}
+    #about-text {
+        width: 400px;
+    }
+    #portfolio {
+        padding-left: 18px;padding-right:18px;
+    }
+    #portfolio-header {
+        padding-left: 2px;
+    }
+    .title-row {
+        margin-top: 20px;
+    }
+    .skill-row {
+        margin-bottom: 800px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1080px) {
+    .sidebar {padding-top: 30px;transition: 0.3s;}
+    .sidebar a {font-size: 18px;}
+    html {overflow-x: scroll;}
+    #main {overflow-x: scroll;}
+    .section {padding-left: 40px;padding-right: 40px}
+    .source {width: 800px}
+    #head2 {color: white !important; font-size: 64px;}
+    #head1 {font-size: 72px;}
+    #about-text {
+        width : 500px;
+    }
+    #portfolio {
+        padding-left: 36px;padding-right:36px;align-items:center;
+    }
+    #portfolio-header {
+        padding-left: 4px;
+    }
+    .title-row {
+        margin-top: 20px;
+    }
+    .skill-row {
+        margin-bottom: 600px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sidebar {padding-top: 30px;transition: 0.3s;}
+    .sidebar a {font-size: 18px;}
+    html {overflow-x: scroll;}
+    #main {overflow-x: scroll;}
+    .section {padding-left: 80px;padding-right: 80px}
+    .source {width: 800px}
+    #head2 {color: white !important; font-size: 64px;}
+    #head1 {font-size: 72px;}
+    #about-text {
+        width : 800px;
+    }
+    #portfolio {
+        padding-left: 36px;padding-right:36px;align-items:center;
+    }
+    #portfolio-header {
+        padding-left: 4px;
+    }
+    .title-row {
+        margin-top: 20px;
+    }
+    .skill-row {
+        margin-bottom: 400px;
+    }
+}
+
