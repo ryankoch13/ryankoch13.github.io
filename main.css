@@ -129,6 +129,15 @@ p {
 .link {
     text-decoration: none !important;
 }
+.form-group {
+    border-radius: 10px;
+}
+.form-control {
+    border-radius: 10px;
+}
+.btn {
+    border-radius: 10px;
+}
 
 
 /* Divder rows */
