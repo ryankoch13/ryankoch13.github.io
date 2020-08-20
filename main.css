@@ -141,6 +141,9 @@ p {
 .contacts:hover {
     background-color: salmon;
 }
+.contacts:hover h3 {
+    color: black;
+}
 .link {
     text-decoration: none !important;
 }
@@ -331,6 +334,7 @@ p {
     }
 }
 
+/* Small Computers */
 @media screen and (max-width: 1200px) {
     .section {padding-left: 80px;padding-right: 80px}
     .source {width: 800px}
