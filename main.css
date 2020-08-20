@@ -64,6 +64,7 @@ p {
     text-align: center;
     border-radius: 10px;
     color: black;
+    text-decoration: underline;
     font-weight: 500;
     transition: 0.4s;
     height: 200px;
