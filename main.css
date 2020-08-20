@@ -268,40 +268,27 @@ p {
 }
 
 /* Mediaqueries */
-/* Mobile */
-@media screen and (max-width: 576px) {
-    .skill-row {
-    margin-bottom: 1200px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .sidebar {padding-top: 15px;transition: 0.3s;}
-    .sidebar a {font-size: 18px;}
-    html {overflow-x: auto;}
-    h2 {font-size: 48px;}
-    h3 {font-size:36px;}
-    #main {overflow-x: scroll;}
-    .section {padding-left: 20px;padding-right:20px;}
-    #head2 {color: white !important; font-size: 48px;}
-    #head1 {font-size: 56px;}
-    .source {width: 400px}
+
+/* Small Computers */
+@media screen and (max-width: 1200px) {
+    .section {padding-left: 80px;padding-right: 80px}
+    .source {width: 800px}
+    /* #head2 {color: white !important; font-size: 64px;}
+    #head1 {font-size: 72px;} */
     #about-text {
-        width: 320px;
+        width : 800px;
     }
     #portfolio {
-        padding-left: 18px;padding-right:18px;
+        padding-left: 66px;padding-right:66px;align-items:center;
     }
     #portfolio-header {
-        padding-left: 2px;
+        padding-left: 14px;
     }
     .title-row {
-        margin-top: 20px;
+        margin-top: 20px !important;
     }
     .skill-row {
-        margin-bottom: 1000px;
-    }
-    .subheader {
-        margin-top: 200px;
+        margin-bottom: 200px;
     }
 }
 
@@ -327,33 +314,51 @@ p {
         padding-left: 4px;
     }
     .title-row {
-        margin-top: 20px;
+        margin-top: 40px !important;
     }
     .skill-row {
-        margin-bottom: 800px;
+        margin-bottom: 600px;
     }
 }
 
-/* Small Computers */
-@media screen and (max-width: 1200px) {
-    .section {padding-left: 80px;padding-right: 80px}
-    .source {width: 800px}
-    /* #head2 {color: white !important; font-size: 64px;}
-    #head1 {font-size: 72px;} */
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .sidebar {padding-top: 15px;transition: 0.3s;}
+    .sidebar a {font-size: 18px;}
+    html {overflow-x: auto;}
+    h2 {font-size: 48px;}
+    h3 {font-size:36px;}
+    #main {overflow-x: scroll;}
+    .section {padding-left: 20px;padding-right:20px;}
+    #head2 {color: white !important; font-size: 48px;}
+    #head1 {font-size: 56px;}
+    .source {width: 400px}
     #about-text {
-        width : 800px;
+        width: 320px;
     }
     #portfolio {
-        padding-left: 66px;padding-right:66px;align-items:center;
+        padding-left: 18px;padding-right:18px;
     }
     #portfolio-header {
-        padding-left: 14px;
+        padding-left: 2px;
     }
     .title-row {
-        margin-top: 20px;
+        margin-top: 80px !important;
     }
     .skill-row {
-        margin-bottom: 480px;
+        margin-bottom: 600px;
+    }
+    .subheader {
+        margin-top: 200px;
     }
 }
+@media screen and (max-width: 576px) {
+    .skill-row {
+    margin-bottom: 600px;
+    }
+}
+
+
+
+
 
