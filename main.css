@@ -1,7 +1,8 @@
 /* Global */
 
 html {
-    scroll-behavior: smooth; /* This should really be the default option. It's so much better */
+    scroll-behavior: smooth;
+    /* This should really be the default option. It's so much better */
     overflow-x: hidden;
 }
 
@@ -11,11 +12,13 @@ h2 {
     color: aquamarine;
     font-weight: 600;
 }
+
 h3 {
     font-size: 56px;
     color: rgb(232, 232, 232);
     font-weight: 600;
 }
+
 p {
     font-size: 24px;
     font-weight: 500;
@@ -31,10 +34,13 @@ canvas {
 
 /* Main section */
 #main {
-    transition: margin-left .5s; /* Sidebar transition */
-    overflow-x: hidden; /* No Scroll */
+    transition: margin-left .5s;
+    /* Sidebar transition */
+    overflow-x: hidden;
+    /* No Scroll */
     margin-left: 40px;
 }
+
 #main ::selection {
     background-color: darksalmon;
     color: white;
@@ -52,6 +58,7 @@ canvas {
 .header {
     padding-bottom: 40px;
 }
+
 .subheader {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -68,13 +75,16 @@ canvas {
     background-position: center;
     background-color: black;
 }
+
 #hero-text {
     padding-top: 0px;
     padding-bottom: 20px;
 }
+
 .skill-row {
     height: 300px;
 }
+
 .skills {
     background-color: aquamarine;
     vertical-align: center;
@@ -86,6 +96,7 @@ canvas {
     height: 200px;
     padding-top: 48px;
 }
+
 .skill-text {
     font-size: 32px;
     font-weight: 600;
@@ -95,6 +106,7 @@ canvas {
 .skills:hover {
     opacity: 0.9;
 }
+
 .hvr-oo {
     display: inline-block;
     vertical-align: middle;
@@ -103,11 +115,12 @@ canvas {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
 }
+
 .hvr-oo:before {
     content: '';
     position: absolute;
     border: aquamarine solid 4px;
-    border-radius: 10px; 
+    border-radius: 10px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -117,12 +130,15 @@ canvas {
     -webkit-transition-property: top, right, bottom, left;
     transition-property: top, right, bottom, left;
 }
-.hvr-oo:hover:before, .hvr-oo:focus:before, .hvr-oo:active:before {
+
+.hvr-oo:hover:before,
+.hvr-oo:focus:before,
+.hvr-oo:active:before {
     top: -8px;
     right: -8px;
     bottom: -8px;
     left: -8px;
-    border: darkcyan solid 4px; 
+    border: darkcyan solid 4px;
 }
 
 /* Portfolio */
@@ -132,6 +148,7 @@ canvas {
     padding-left: 180px;
     padding-right: 180px;
 }
+
 #portfolio-header {
     padding-left: 80px;
 }
@@ -149,6 +166,7 @@ canvas {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
+
 .hvr-so:before {
     content: "";
     position: absolute;
@@ -170,10 +188,14 @@ canvas {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.hvr-so:hover:before, .hvr-so:focus:before, .hvr-so:active:before {
+
+.hvr-so:hover:before,
+.hvr-so:focus:before,
+.hvr-so:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
 .project {
     border-radius: 10px;
     font-size: 24px;
@@ -183,27 +205,34 @@ canvas {
     color: salmon;
     transition: 0.5s;
 }
+
 .project:hover {
     background-color: white;
     color: black;
 }
+
 .project:hover .source-link {
     background-color: darksalmon;
     color: white;
 }
+
 .project-title {
     white-space: nowrap;
 }
+
 .project-icon {
     font-size: 248px;
 }
+
 .project-row {
     justify-content: space-between;
 }
+
 .project-link {
     background-color: white;
     border-radius: 10px;
 }
+
 .source-link {
     background-color: white;
     border-radius: 10px;
@@ -214,8 +243,9 @@ canvas {
 
 /* Contacts */
 .icon-side {
-    align-items:center;
+    align-items: center;
 }
+
 .contacts {
     text-align: center;
     transition: 0.6s;
@@ -223,6 +253,7 @@ canvas {
     margin-bottom: 64px;
     padding-top: 10px;
 }
+
 /* Contact Hover Effects */
 .hvr-br {
     display: inline-block;
@@ -236,6 +267,7 @@ canvas {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
+
 .hvr-br:before {
     content: "";
     position: absolute;
@@ -257,15 +289,22 @@ canvas {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.hvr-br:hover, .hvr-br:focus, .hvr-br:active {
+
+.hvr-br:hover,
+.hvr-br:focus,
+.hvr-br:active {
     color: black;
 }
-.hvr-br:hover:before, .hvr-br:focus:before, .hvr-br:active:before {
+
+.hvr-br:hover:before,
+.hvr-br:focus:before,
+.hvr-br:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
     transition-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
 }
+
 .link {
     text-decoration: none !important;
 }
@@ -274,12 +313,15 @@ canvas {
 .form-group {
     border-radius: 10px;
 }
+
 .form-control {
     border-radius: 10px;
 }
+
 .btn {
     border-radius: 10px;
 }
+
 .form-control:focus {
     border-color: dimgrey;
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 10px dimgrey;
@@ -294,10 +336,11 @@ canvas {
 /* Typewriter Button(formerly view source code button lol) */
 .source {
     padding: 40px;
-    background-color: aquamarine; 
+    background-color: aquamarine;
     border-radius: 10px;
     transition: 0.4s;
 }
+
 #typed {
     color: black;
 }
@@ -306,6 +349,7 @@ canvas {
 .source:hover #typed {
     color: white;
 }
+
 .hvr-ri {
     display: inline-block;
     vertical-align: middle;
@@ -320,6 +364,7 @@ canvas {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
+
 .hvr-ri:before {
     content: "";
     position: absolute;
@@ -339,10 +384,16 @@ canvas {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.hvr-ri:hover, .hvr-ri:focus, .hvr-ri:active {
+
+.hvr-ri:hover,
+.hvr-ri:focus,
+.hvr-ri:active {
     color: white;
 }
-.hvr-ri:hover:before, .hvr-ri:focus:before, .hvr-ri:active:before {
+
+.hvr-ri:hover:before,
+.hvr-ri:focus:before,
+.hvr-ri:active:before {
     -webkit-transform: scale(0);
     transform: scale(0);
 }
@@ -350,6 +401,7 @@ canvas {
 .footer-col {
     padding-top: 20px;
 }
+
 .footer-text {
     font-family: 'Raleway', sans-serif;
     color: black;
@@ -370,7 +422,10 @@ canvas {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-#closedSidebar:hover:before, .sidebar:focus:before, .sidebar:active:before {
+
+#closedSidebar:hover:before,
+.sidebar:focus:before,
+.sidebar:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -378,17 +433,25 @@ canvas {
 }
 
 .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
     top: 0;
     left: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.4s; /* 0.3 second transition effect to slide in the sidebar */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.4s;
+    /* 0.3 second transition effect to slide in the sidebar */
     transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
 }
+
 #mySidebar {
     width: 40px;
 }
@@ -403,29 +466,37 @@ canvas {
     display: block;
     transition: 0.4s;
 }
+
 .sidebar a:hover {
     color: purple;
 }
 
 #closedSidebar {
-    height: 100%; /* Full height */
-    width: 50px;  /* width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    /* Full height */
+    width: 50px;
+    /* width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
     top: 0;
     left: 0;
-    overflow-x: auto; /* No scroll */
+    overflow-x: auto;
+    /* No scroll */
     transition: 0.5s;
     color: black;
     text-align: center;
     font-size: 38px;
     padding-top: 10px;
-    background-color: salmon; /* To give you that warm, Miami in the 80's feel */
+    background-color: salmon;
+    /* To give you that warm, Miami in the 80's feel */
 }
 
 /* ID styling */
 #about-text {
-    width: 860px; /* Don't want to wear out people's eyes */
+    width: 860px;
+    /* Don't want to wear out people's eyes */
 }
 
 /* Hero Headers */
@@ -436,35 +507,48 @@ canvas {
     color: white;
     /* mix-blend-mode: difference; */
 }
+
 #head2 {
-    line-height: 130%; /* The main headline was looking kinda squished. */
-    padding-bottom: 40px; 
+    line-height: 130%;
+    /* The main headline was looking kinda squished. */
+    padding-bottom: 40px;
     color: white;
     mix-blend-mode: difference;
 }
-
-
 
 /* Mediaqueries */
 
 /* Small Computers */
 @media screen and (max-width: 1200px) {
-    .section {padding-left: 80px;padding-right: 80px}
-    .source {width: 800px}
+    .section {
+        padding-left: 80px;
+        padding-right: 80px
+    }
+
+    .source {
+        width: 800px
+    }
+
     /* #head2 {color: white !important; font-size: 64px;}
     #head1 {font-size: 72px;} */
     #about-text {
-        width : 800px;
+        width: 800px;
     }
+
     #portfolio {
-        padding-left: 66px;padding-right:66px;align-items:center;
+        padding-left: 66px;
+        padding-right: 66px;
+        align-items: center;
     }
+
     #portfolio-header {
         padding-left: 14px;
     }
+
     .title-row {
         margin-top: 20px !important;
     }
+
     .skill-row {
         margin-bottom: 200px;
     }
@@ -472,28 +556,67 @@ canvas {
 
 /* Tablet */
 @media screen and (max-width: 992px) {
-    .sidebar {padding-top: 30px;transition: 0.3s;}
-    .sidebar a {font-size: 18px;}
-    html {overflow-x: auto;}
-    h2 {font-size:64px;}
-    h3{font-size:48px;}
-    #main {overflow-x: scroll;}
-    .section {padding-left: 40px;padding-right: 40px}
-    .source {width: 800px}
-    #head2 {color: white !important; font-size: 64px;}
-    #head1 {font-size: 72px;}
+    .sidebar {
+        padding-top: 30px;
+        transition: 0.3s;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    html {
+        overflow-x: auto;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    #main {
+        overflow-x: scroll;
+    }
+
+    .section {
+        padding-left: 40px;
+        padding-right: 40px
+    }
+
+    .source {
+        width: 800px
+    }
+
+    #head2 {
+        color: white !important;
+        font-size: 64px;
+    }
+
+    #head1 {
+        font-size: 72px;
+    }
+
     #about-text {
-        width : 500px;
+        width: 500px;
     }
+
     #portfolio {
-        padding-left: 36px;padding-right:36px;align-items:center;
+        padding-left: 36px;
+        padding-right: 36px;
+        align-items: center;
     }
+
     #portfolio-header {
         padding-left: 4px;
     }
+
     .title-row {
         margin-top: 40px !important;
     }
+
     .skill-row {
         margin-bottom: 600px;
     }
@@ -501,41 +624,77 @@ canvas {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-    .sidebar {padding-top: 15px;transition: 0.3s;}
-    .sidebar a {font-size: 18px;}
-    html {overflow-x: auto;}
-    h2 {font-size: 48px;}
-    h3 {font-size:36px;}
-    #main {overflow-x: scroll;}
-    .section {padding-left: 20px;padding-right:20px;}
-    #head2 {color: white !important; font-size: 48px;}
-    #head1 {font-size: 56px;}
-    .source {width: 400px}
+    .sidebar {
+        padding-top: 15px;
+        transition: 0.3s;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    html {
+        overflow-x: auto;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    #main {
+        overflow-x: scroll;
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #head2 {
+        color: white !important;
+        font-size: 48px;
+    }
+
+    #head1 {
+        font-size: 56px;
+    }
+
+    .source {
+        width: 400px
+    }
+
     #about-text {
         width: 320px;
     }
+
     #portfolio {
-        padding-left: 18px;padding-right:18px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
+
     #portfolio-header {
         padding-left: 2px;
     }
+
     .title-row {
         margin-top: 80px !important;
     }
+
     .skill-row {
         margin-bottom: 600px;
     }
+
     .subheader {
         margin-top: 200px;
     }
 }
+
 @media screen and (max-width: 576px) {
     .skill-row {
-    margin-bottom: 600px;
+        margin-bottom: 600px;
     }
 }
-
-
-
-
