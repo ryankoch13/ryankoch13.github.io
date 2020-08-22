@@ -40,21 +40,22 @@
     <div id="main">
         <div id="closedSidebar" onmouseover="openNav()">&#9776;</div>
 <!-- Hero start -->
-        <div id="landing" class="jumbotron jumbotron-fluid section"
-            style="background-image:url(https://images.unsplash.com/photo-1513343041531-f73bffeed81b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2828&q=80); background-position:left bottom; color:white; margin-bottom: 0px">
-            <h1 class="display-4" id="head1">Ryan Koch here.</h1>
-            <div class="row blank">
-                <div class="col-md-12"></div>
-            </div>
-            <h2 id="head2">Welcome to my personal
-                site -- please enjoy this sample of my design philosphy and code :]</h2>
+        <div id="landing" class="jumbotron jumbotron-fluid">
+            <div class="section" id="hero-text">
+                <h1 class="display-4" id="head1">Ryan Koch here.</h1>
                 <div class="row blank">
                     <div class="col-md-12"></div>
+                </div>
+                <h2 id="head2">Welcome to my personal
+                    site -- please enjoy this sample of my design philosphy and code :]</h2>
+                <div class="row blank">
+                        <div class="col-md-12"></div>
                 </div>
                 <div class="row">
                     <div class="col-md-10 offset-lg-2 source hvr-ri">
                         <h3 style="font-weight:800" id="typed"></h3>
                     </div>
+                </div>
                 </div>
         </div>
         <div class="row blank">
@@ -349,15 +350,13 @@
     // Body background and hero text color changer
         const [red, green, blue] = [255, 255, 255]
         const section1 = document.querySelector('.body')
-        const section2 = document.querySelector('#head1')
-        const section3 = document.querySelector('#head2')
+        const section2 = document.querySelector('#head2')
         window.addEventListener('scroll', () => {
-            let y = 1 + (window.scrollY || window.pageYOffset) / 130  // Transition rate and initial value for scroll color
+            let y = 0 + (window.scrollY || window.pageYOffset) / 130  // Transition rate and initial value for scroll color
             y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
             let [r, g, b] = [red / y, green / y, blue / y].map(Math.round)
             section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})` // Assigning scroll offset to background of main
-            section2.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the main header
-            section3.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the co-main header
+            section2.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the co-main header
         })
     // Typewriter
         var typed = new Typed('#typed', {

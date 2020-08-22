@@ -1,3 +1,5 @@
+/* Global */
+
 html {
     scroll-behavior: smooth; /* This should really be the default option. It's so much better */
     overflow-x: hidden;
@@ -59,6 +61,17 @@ canvas {
 /* Specific section stylings */
 
 /* Skills */
+.jumbotron {
+    background-image: url('bubbles.jpg');
+    margin-bottom: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black;
+}
+#hero-text {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
 .skill-row {
     height: 300px;
 }
@@ -414,15 +427,20 @@ canvas {
 #about-text {
     width: 860px; /* Don't want to wear out people's eyes */
 }
+
+/* Hero Headers */
 #head1 {
     font-size: 96px;
     font-weight: 900;
     padding-top: 40px;
+    color: white;
+    /* mix-blend-mode: difference; */
 }
 #head2 {
     line-height: 130%; /* The main headline was looking kinda squished. */
     padding-bottom: 40px; 
     color: white;
+    mix-blend-mode: difference;
 }
 
 
