@@ -57,7 +57,13 @@ canvas {
 
 .border {
     background-image: url('./border.gif');
+    background-position: top;
+}
+
+.border2 {
+    background-image: url('./border2.gif');
     background-position: bottom;
+    border: 1px solid #dee2e6 !important;
 }
 
 /* Special font stylings */
@@ -236,12 +242,12 @@ canvas {
 }
 
 .project:hover {
-    background-color: white;
+    mix-blend-mode: difference;
     color: black;
 }
 
 .project:hover .source-link {
-    background-color: darksalmon;
+    background-color: black;
     color: white;
 }
 
