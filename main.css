@@ -87,15 +87,15 @@ canvas {
 
 /* Skills */
 
-.skill-background {
-    /* background-image: url('bubbles.jpg');
-    background-position: center; */
+/* .skill-background {
+    background-image: url('bubbles.jpg');
+    background-position: center;
     margin-left: 120px;
     margin-right: 100px;
     padding-left: 140px;
     padding-right: 160px;
     padding-top: 40px;
-}
+} */
 
 .skill-row {
     height: 300px;
@@ -161,15 +161,15 @@ canvas {
 
 /* Custom padding for portfolio section */
 #portfolio {
-    /* margin-left: 80px;
-    padding-left: 100px;
-    margin-right: 40px;
-    padding-right: 140px;
+    margin-left: 80px;
+    padding-left: 80px;
+    margin-right: 60px;
+    padding-right: 100px;
     background-image: url('bubbles.jpg');
     background-position: center;
-    padding-bottom: 80px; */
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-bottom: 80px;
+    /* padding-left: 180px;
+    padding-right: 180px; */
 }
 
 #portfolio-header {
