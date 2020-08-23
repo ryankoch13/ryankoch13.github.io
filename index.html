@@ -411,14 +411,16 @@
                 context = canvas.getContext('2d'),
                 contact = document.getElementById('contact-me');
             // Sets canvas size to slightly larger than the contact me section
+            window.addEventListener('resize', resizeCanvas, false);
+
             function resizeCanvas() {
                 canvas.width = contact.clientWidth;
                 canvas.height = 100 + contact.clientHeight;
-                // Randomly generates 8 circles
                 for (i = 0; i < 8; i++) {
                     drawStuff();
                 }
             }
+            // Randomly generates 8 circles}
             resizeCanvas();
 
             function drawStuff() {
