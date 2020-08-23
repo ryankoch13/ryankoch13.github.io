@@ -186,10 +186,10 @@ canvas {
 
 /* Custom padding for portfolio section */
 #portfolio {
-    margin-left: 80px;
-    padding-left: 80px;
-    margin-right: 60px;
-    padding-right: 100px;
+    /* margin-left: 80px; */
+    padding-left: 160px;
+    /* margin-right: 60px; */
+    padding-right: 160px;
     background-image: url('bubbles.jpg');
     background-position: center;
     padding-bottom: 80px;
