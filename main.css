@@ -55,6 +55,11 @@ canvas {
     font-family: 'Raleway', sans-serif;
 }
 
+.border {
+    background-image: url('./border.gif');
+    background-position: bottom;
+}
+
 /* Special font stylings */
 .header {
     padding-bottom: 40px;
@@ -111,6 +116,7 @@ canvas {
     font-weight: 500;
     height: 200px;
     padding-top: 48px;
+    transition-duration: 0.3;
 }
 
 .skill-text {
@@ -120,7 +126,7 @@ canvas {
 
 /* Skill Hover Effects */
 .skills:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .hvr-oo {
@@ -419,6 +425,11 @@ canvas {
 .hvr-ri:active:before {
     -webkit-transform: scale(0);
     transform: scale(0);
+}
+
+.footer {
+    background-color: white;
+    background-position: center;
 }
 
 .footer-col {
