@@ -55,12 +55,25 @@ canvas {
     font-family: 'Raleway', sans-serif;
 }
 
-.border {
+.border1-top {
     background-image: url('./border.gif');
     background-position: top;
+    border: 1px solid #dee2e6 !important;
 }
 
-.border2 {
+.border1-bottom {
+    background-image: url('./border.gif');
+    background-position: bottom;
+    border: 1px solid #dee2e6 !important;
+}
+
+.border2-top {
+    background-image: url('./border2.gif');
+    background-position: top;
+    border: 1px solid #dee2e6 !important;
+}
+
+.border2-bottom {
     background-image: url('./border2.gif');
     background-position: bottom;
     border: 1px solid #dee2e6 !important;
