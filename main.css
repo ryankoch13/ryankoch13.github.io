@@ -254,7 +254,7 @@ canvas {
 .project {
     border-radius: 10px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     opacity: 1;
     color: salmon;
@@ -268,7 +268,22 @@ canvas {
 
 .project:hover .source-link {
     background-color: black;
-    color: white;
+    color: aquamarine;
+}
+
+.project:hover .project-icon {
+    color: grey;
+}
+
+.project:hover .project-text {
+    color: grey;
+}
+
+.project-text {
+    mix-blend-mode: normal !important;
+    font-size: 24px;
+    font-weight: 700;
+
 }
 
 .project-title {
