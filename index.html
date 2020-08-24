@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" href="./favicon.png">
     <!-- Script/CDN imports -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -41,7 +43,7 @@
     </div>
     <!-- Main Start -->
     <div id="main">
-        <div id="closedSidebar" onmouseover="openNav()">&#9776;</div>
+        <div id="closedSidebar" onmouseover="openNav()"><i class="fas fa-bars"></i></div>
         <!-- Hero Start -->
         <div id="landing" class="jumbotron jumbotron-fluid">
             <div class="section" id="hero-text">
@@ -173,6 +175,43 @@
         <div class="fluid-container" id="skill-container">
             <div class="skill-background section">
                 <h2 class="header" id="technical">Technologies.</h2>
+                <!-- Languages Title -->
+                <div class="row title-row">
+                    <div class="col-12">
+                        <h3><span class="subheader">Languages.</span> (Hover)</h3>
+                    </div>
+                </div>
+                <div class="row blank">
+                    <div class="col-md-12"></div>
+                </div>
+                <!-- Languages Tiles -->
+                <div class="row skill-row justify-content-center">
+                    <div class="col-md-12 col-lg-6 col-xl-3">
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="right"
+                            data-html="true"
+                            title="<p>I've worked with HTML & CSS for almost a year now. I actually really like designing webpages, even though I consider myself more of a back-end developer.</p>">
+                            <p class="skill-text"><i class="fab ico fa-js-square"></i><br>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-xl-3">
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="top"
+                            data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
+                            <p class="skill-text"><i class="fab ico fa-html5"></i><br>HTML & CSS</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-xl-3">
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="bottom"
+                            data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
+                            <p class="skill-text"><i class="fab ico fa-react"></i><br>Ruby</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-xl-3">
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="left"
+                            data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
+                            <p class="skill-text"><i class="fab ico fa-python"></i><br>Python</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Front End Title -->
                 <div class="row title-row">
                     <div class="col-12">
@@ -185,28 +224,28 @@
                 <!-- Front End Skill Tiles -->
                 <div class="row skill-row justify-content-center">
                     <div class="col-md-12 col-lg-6 col-xl-3">
-                        <div class="col-lg-12 skills hvr-oo" data-toggle="tooltip" data-placement="right"
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="right"
                             data-html="true"
                             title="<p>I've worked with HTML & CSS for almost a year now. I actually really like designing webpages, even though I consider myself more of a back-end developer.</p>">
-                            <p class="skill-text">HTML & CSS</p>
+                            <p class="skill-text"><i class="fab ico fa-bootstrap"></i><br>Bootstrap</p>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 col-xl-3">
-                        <div class="col-lg-12 skills hvr-oo" data-toggle="tooltip" data-placement="top" data-html="true"
-                            title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
-                            <p class="skill-text">JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-6 col-xl-3">
-                        <div class="col-lg-12 skills hvr-oo" data-toggle="tooltip" data-placement="bottom"
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="top"
                             data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
-                            <p class="skill-text">ReactJS</p>
+                            <p class="skill-text"><i class="fab ico fa-vuejs"></i><br>Vue.js</p>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 col-xl-3">
-                        <div class="col-lg-12 skills hvr-oo" data-toggle="tooltip" data-placement="left"
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="bottom"
                             data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
-                            <p class="skill-text">Bootstrap</p>
+                            <p class="skill-text"><i class="fab ico fa-react"></i><br>React</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-xl-3">
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="left"
+                            data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
+                            <p class="skill-text"><i class="fas ico fa-mobile-alt"></i><br>React Native</p>
                         </div>
                     </div>
                 </div>
@@ -222,27 +261,27 @@
                 <!-- Back End Skill Tiles -->
                 <div class="row skill-row justify-content-center">
                     <div class="col-md-12 col-lg-6 col-xl-3">
-                        <div class="col-lg-12 skills hvr-oo" data-toggle="tooltip" data-placement="right"
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="right"
                             data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
-                            <p class="skill-text">Ruby on Rails</p>
+                            <p class="skill-text"><i class="fas ico fa-laptop-code"></i><br>Ruby on Rails</p>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 col-xl-3">
-                        <div class="col-lg-12 skills hvr-oo" data-toggle="tooltip" data-placement="bottom"
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="bottom"
                             data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
-                            <p class="skill-text">PostgreSQL</p>
+                            <p class="skill-text"><i class="fas ico fa-server"></i><br>PostgreSQL</p>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 col-xl-3">
-                        <div class="col-lg-12 skills hvr-oo" data-toggle="tooltip" data-placement="top" data-html="true"
-                            title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
-                            <p class="skill-text">Node.JS</p>
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="top"
+                            data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
+                            <p class="skill-text"><i class="fab ico fa-node-js"></i><br>Node.JS</p>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 col-xl-3">
-                        <div class="col-lg-12 skills hvr-oo" data-toggle="tooltip" data-placement="left"
+                        <div class="col-lg-12 skills d-flex hvr-oo" data-toggle="tooltip" data-placement="left"
                             data-html="true" title="<p>Sample text. Lorem ipsum get rekt noob.</p>">
-                            <p class="skill-text">Lorem Ipsum</p>
+                            <p class="skill-text"><i class="fas ico fa-upload"></i><br>Postman</p>
                         </div>
                     </div>
                 </div>
@@ -255,11 +294,11 @@
         <div class="row blank">
             <div class="col-md-12 border1-bottom"></div>
         </div>
+        <!-- Canvas for random circles -->
+        <canvas id="myCanvas"></canvas>
         <div class="row blank">
             <div class="col-md-12"></div>
         </div>
-        <!-- Canvas for random circles -->
-        <canvas id="myCanvas"></canvas>
         <!-- Contact start -->
         <div class="fluid-container section" id="contact-me">
             <h2 class="header" id="contact">Contact Me.</h2>
@@ -269,23 +308,23 @@
                 <div class="col-md-5 icon-side">
                     <div class="row contact-row">
                         <div class="col-lg-12 contacts hvr-br"><a href="https://github.com/ryankoch13" class="link">
-                                <h3>GitHub</h3>
+                                <h3>GitHub <i class="fab fa-github"></i></h3>
                             </a></div>
                     </div>
                     <div class="row contact-row">
                         <div class="col-lg-12 contacts hvr-br"><a
                                 href="https://www.linkedin.com/in/ryan-koch-339b91199/" class="link">
-                                <h3>LinkedIn</h3>
+                                <h3>LinkedIn <i class="fab fa-linkedin"></i></h3>
+                            </a></div>
+                    </div>
+                    <div class="row contact-row">
+                        <div class="col-lg-12 contacts hvr-br"><a href="mailto:ryan@ryankoch.me" class="link">
+                                <h3>Email <i class="fas fa-envelope"></i></h3>
                             </a></div>
                     </div>
                     <div class="row contact-row">
                         <div class="col-lg-12 contacts hvr-br">
-                            <h3>Email</h3>
-                        </div>
-                    </div>
-                    <div class="row contact-row">
-                        <div class="col-lg-12 contacts hvr-br">
-                            <h3>Phone</h3>
+                            <h3>YouTube <i class="fab fa-youtube"></i></h3>
                         </div>
                     </div>
                     <!-- <div class="row">
@@ -406,7 +445,7 @@
         var typed = new Typed('#typed', {
             strings: ['I am passionate about... presence.', 'I am passionate about... coding.',
                 'I love... live music.', 'I enjoy... problem solving.', 'I escape with... weightlifting.',
-                'I seek... consciousness.', 'I would love... to meet you.'
+                'I seek... consciousness. <i class="fas fa-om"></i>', 'I would love... to meet you.'
             ], //My sentences
             typeSpeed: 50, //How fast it types (higher = slower)
             backSpeed: 60, //How fast it backspaces (higher = slower)
@@ -430,7 +469,7 @@
 
             function resizeCanvas() {
                 canvas.width = contact.clientWidth;
-                canvas.height = 100 + contact.clientHeight;
+                canvas.height = 200 + contact.clientHeight;
                 for (i = 0; i < 8; i++) {
                     drawStuff();
                 }
