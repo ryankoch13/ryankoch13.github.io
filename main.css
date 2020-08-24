@@ -259,16 +259,14 @@ canvas {
     opacity: 1;
     color: salmon;
     transition: 0.5s;
+    background-color: black;
+    border: 5px solid salmon;
 }
 
 .project:hover {
     mix-blend-mode: difference;
     color: black;
-}
-
-.project:hover .source-link {
-    background-color: black;
-    color: aquamarine;
+    border: 5px solid black;
 }
 
 .project:hover .project-icon {
@@ -277,6 +275,11 @@ canvas {
 
 .project:hover .project-text {
     color: grey;
+}
+
+.project:hover .source-link {
+    background-color: black;
+    color: white;
 }
 
 .project-text {
