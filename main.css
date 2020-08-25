@@ -63,7 +63,7 @@ canvas {
 
 .border1-bottom {
     background-image: url('./border.gif');
-    background-position: bottom;
+    background-position: center right;
     border: 1px solid #dee2e6 !important;
 }
 
@@ -320,7 +320,7 @@ canvas {
 }
 
 .contacts {
-    text-align: right;
+    text-align: center;
     transition: 0.6s;
     border-radius: 10px;
     margin-bottom: 64px;
