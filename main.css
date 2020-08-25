@@ -109,6 +109,75 @@ canvas {
 
 }
 
+/* Typewriter Button(formerly view source code button lol) */
+.source {
+    padding: 40px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+#typed {
+    color: black;
+}
+
+/* Source Hover Effects  */
+.source:hover #typed {
+    color: white;
+}
+
+.hvr-ri {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    /* border: 5px solid darkcyan; */
+    border-radius: 15px;
+    background-image: url('./aquacircle.gif');
+    background-position: center;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-ri:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: aquamarine;
+    border-radius: 10px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-ri:hover,
+.hvr-ri:focus,
+.hvr-ri:active {
+    color: white;
+    /* border: 5px solid white; */
+    border-radius: 10px;
+}
+
+.hvr-ri:hover:before,
+.hvr-ri:focus:before,
+.hvr-ri:active:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
 /* Skills */
 
 /* .skill-background {
@@ -252,7 +321,6 @@ canvas {
 }
 
 .project {
-    border-radius: 10px;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
@@ -261,6 +329,7 @@ canvas {
     transition: 0.5s;
     background-color: black;
     border: 5px solid salmon;
+    border-radius: 15px;
 }
 
 .project:hover {
@@ -454,71 +523,6 @@ canvas {
 /* Divder rows */
 .blank {
     height: 100px;
-}
-
-/* Typewriter Button(formerly view source code button lol) */
-.source {
-    padding: 40px;
-    background-color: aquamarine;
-    border-radius: 10px;
-    transition: 0.4s;
-}
-
-#typed {
-    color: black;
-}
-
-/* Source Hover Effects  */
-.source:hover #typed {
-    color: white;
-}
-
-.hvr-ri {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    background-image: url('./aquacircle.gif');
-    background-position: center;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-
-.hvr-ri:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: aquamarine;
-    border-radius: 10px;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-.hvr-ri:hover,
-.hvr-ri:focus,
-.hvr-ri:active {
-    color: white;
-}
-
-.hvr-ri:hover:before,
-.hvr-ri:focus:before,
-.hvr-ri:active:before {
-    -webkit-transform: scale(0);
-    transform: scale(0);
 }
 
 .footer {
