@@ -181,18 +181,13 @@ canvas {
 
 /* Skills */
 
-/* .skill-background {
-    background-image: url('bubbles.jpg');
-    background-position: center;
-    margin-left: 120px;
-    margin-right: 100px;
-    padding-left: 140px;
-    padding-right: 160px;
-    padding-top: 40px;
-} */
+#technical {
+    padding-bottom: 60px;
+}
 
 .skill-row {
-    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .skills {
@@ -370,6 +365,7 @@ canvas {
 
 .project-row {
     justify-content: space-between;
+    padding-top: 60px;
 }
 
 .project-link {
@@ -386,6 +382,11 @@ canvas {
 }
 
 /* Contacts */
+
+.contact-section {
+    padding-top: 60px;
+}
+
 .icon-side {
     align-items: center;
 }
@@ -396,6 +397,10 @@ canvas {
     border-radius: 10px;
     margin-bottom: 64px;
     padding-top: 10px;
+}
+
+.form-text {
+    text-decoration: underline;
 }
 
 /* Contact Hover Effects */
