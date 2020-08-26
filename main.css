@@ -652,8 +652,8 @@ canvas {
 /* Small Computers */
 @media screen and (max-width: 1200px) {
     .section {
-        padding-left: 80px;
-        padding-right: 80px
+        padding-left: 160px;
+        padding-right: 160px;
     }
 
     .source {
@@ -663,17 +663,17 @@ canvas {
     /* #head2 {color: white !important; font-size: 64px;}
     #head1 {font-size: 72px;} */
     #about-text {
-        width: 800px;
+        width: 600px;
     }
 
     #portfolio {
-        padding-left: 66px;
-        padding-right: 66px;
+        padding-left: 120px;
+        padding-right: 120px;
         align-items: center;
     }
 
     #portfolio-header {
-        padding-left: 14px;
+        padding-left: 60px;
     }
 
     .title-row {
@@ -715,8 +715,8 @@ canvas {
     }
 
     .section {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .source {
@@ -737,15 +737,15 @@ canvas {
     }
 
     #portfolio {
-        padding-left: 36px;
-        padding-right: 36px;
+        padding-left: 84px;
+        padding-right: 84px;
         align-items: center;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     #portfolio-header {
-        padding-left: 4px;
+        padding-left: 16px;
     }
 
     .title-row {
@@ -785,8 +785,8 @@ canvas {
     }
 
     .section {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     #head2 {
@@ -807,14 +807,14 @@ canvas {
     }
 
     #portfolio {
-        padding-left: 18px;
-        padding-right: 18px;
-        margin-left: 10px;
-        margin-right: 10px;
+        padding-left: 64px;
+        padding-right: 64px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     #portfolio-header {
-        padding-left: 2px;
+        padding-left: 16px;
     }
 
     .title-row {
