@@ -300,6 +300,7 @@ canvas {
     left: 0;
     right: 0;
     background-color: white;
+    /* mix-blend-mode: difference; */
     border-radius: 10px;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -326,7 +327,7 @@ canvas {
     text-align: center;
     opacity: 1;
     color: salmon;
-    transition: 0.5s;
+    transition: 0.4s;
     background-color: black;
     border: 5px solid salmon;
     border-radius: 15px;
