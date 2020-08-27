@@ -685,11 +685,6 @@ canvas {
     .title-row {
         margin-top: 20px !important;
     }
-
-    .skill-row {
-        margin-bottom: 200px;
-    }
-
     ;
 }
 
@@ -757,10 +752,6 @@ canvas {
     .title-row {
         margin-top: 40px !important;
     }
-
-    .skill-row {
-        margin-bottom: 600px;
-    }
 }
 
 /* Mobile */
@@ -825,19 +816,5 @@ canvas {
 
     .title-row {
         margin-top: 80px !important;
-    }
-
-    .skill-row {
-        margin-bottom: 600px;
-    }
-
-    .subheader {
-        margin-top: 200px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .skill-row {
-        margin-bottom: 600px;
     }
 }
