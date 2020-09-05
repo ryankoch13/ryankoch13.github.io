@@ -362,11 +362,12 @@ canvas {
 }
 
 .project-title {
-    white-space: nowrap;
+    
 }
 
 .project-icon {
     font-size: 248px;
+    white-space: nowrap;
 }
 
 .project-row {
@@ -722,8 +723,8 @@ canvas {
     }
 
     .section {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     .source {
@@ -788,8 +789,8 @@ canvas {
     }
 
     .section {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     #head2 {
