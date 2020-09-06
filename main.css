@@ -328,11 +328,11 @@ canvas {
     font-weight: 700;
     text-align: center;
     opacity: 1;
-    color: salmon;
     transition: 0.4s;
     background-color: black;
     border: 5px solid salmon;
     border-radius: 15px;
+    padding-top: 10px;
 }
 
 .project:hover {
@@ -358,16 +358,18 @@ canvas {
     mix-blend-mode: normal !important;
     font-size: 24px;
     font-weight: 700;
-
+    color: salmon;
 }
 
-.project-title {
-    
+.project:hover a {
+    text-decoration: none !important;
 }
 
 .project-icon {
     font-size: 248px;
     white-space: nowrap;
+    color: salmon;
+    text-decoration: none;
 }
 
 .project-row {
