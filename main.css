@@ -824,4 +824,12 @@ canvas {
     .title-row {
         margin-top: 80px !important;
     }
+    .project-icon {
+        font-size: 178px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .project-icon {
+        font-size: 128px;
+    }
 }
