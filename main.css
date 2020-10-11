@@ -268,15 +268,11 @@ canvas {
 
 /* Custom padding for portfolio section */
 #portfolio {
-    /* margin-left: 80px; */
     padding-left: 160px;
-    /* margin-right: 60px; */
     padding-right: 160px;
     background-image: url('bubbles.jpg');
     background-position: bottom;
     padding-bottom: 80px;
-    /* padding-left: 180px;
-    padding-right: 180px; */
 }
 
 #portfolio-header {
@@ -729,10 +725,6 @@ canvas {
         font-size: 36px;
     }
 
-    #main {
-        overflow-x: scroll;
-    }
-
     .section {
         padding-left: 80px;
         padding-right: 80px;
@@ -779,6 +771,23 @@ canvas {
         transition: 0.3s;
     }
 
+
+    #mySidebar {
+        display: none;
+    }
+
+    #closedSidebar {
+        display: none;
+    }
+
+    #main {
+        margin-left: 0px;
+    }
+
+    .blank {
+        padding-left: 0px;
+    }
+
     .sidebar a {
         font-size: 18px;
     }
@@ -793,10 +802,6 @@ canvas {
 
     h3 {
         font-size: 28px;
-    }
-
-    #main {
-        overflow-x: scroll;
     }
 
     .section {
