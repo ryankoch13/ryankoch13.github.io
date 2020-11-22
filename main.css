@@ -272,6 +272,7 @@ canvas {
     padding-right: 160px;
     background-image: url('bubbles.jpg');
     background-position: bottom;
+    background-size: cover;
     padding-bottom: 80px;
 }
 
