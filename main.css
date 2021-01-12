@@ -399,14 +399,16 @@ canvas {
 }
 
 .icon-side {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 24px;
 }
 
 .contacts {
     text-align: center;
     transition: 0.6s;
     border-radius: 10px;
-    margin-bottom: 72px;
     padding-top: 10px;
 }
 
@@ -641,10 +643,26 @@ canvas {
     transition: 0.5s;
     color: black;
     text-align: center;
-    font-size: 38px;
+    font-size: 32px;
     padding-top: 10px;
     background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /* To give you that warm, Miami in the 80's feel */
+}
+
+#sidebarContact {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebarContact a {
+    color: black;
+}
+
+#sidebarContact a:hover {
+    color: purple;
 }
 
 /* ID styling */
@@ -691,10 +709,23 @@ canvas {
         padding-left: 120px;
         padding-right: 120px;
         align-items: center;
+        padding-bottom: 24px;
     }
 
     #portfolio-header {
         padding-left: 60px;
+    }
+
+    .project {
+        margin-bottom: 48px;
+    }
+
+    .skills {
+        margin-bottom: 24px;
+    }
+
+    .skill-row {
+        padding-bottom: 48px;
     }
 
     .title-row {
@@ -709,57 +740,45 @@ canvas {
         padding-top: 30px;
         transition: 0.3s;
     }
-
     .sidebar a {
         font-size: 18px;
     }
-
     html {
         overflow-x: auto;
     }
-
     h2 {
         font-size: 64px;
     }
-
     h3 {
         font-size: 36px;
     }
-
     .section {
         padding-left: 80px;
         padding-right: 80px;
     }
-
     .source {
         width: 800px
     }
-
     #head2 {
         color: white !important;
         font-size: 64px;
     }
-
     #head1 {
         font-size: 72px;
     }
-
     #about-text {
         width: 500px;
     }
-
     #portfolio {
         padding-left: 84px;
         padding-right: 84px;
-        align-items: center;
+        align-items: space-between;
         margin-left: 0px;
         margin-right: 0px;
     }
-
     #portfolio-header {
         padding-left: 16px;
     }
-
     .title-row {
         margin-top: 40px !important;
     }
@@ -771,78 +790,67 @@ canvas {
         padding-top: 15px;
         transition: 0.3s;
     }
-
-
     #mySidebar {
         display: none;
     }
-
     #closedSidebar {
         display: none;
     }
-
+    #sidebarContact {
+        display: none;
+    }
     #main {
         margin-left: 0px;
     }
-
     .blank {
         padding-left: 0px;
     }
-
     .sidebar a {
         font-size: 18px;
     }
-
     html {
         overflow-x: auto;
     }
-
     h2 {
         font-size: 48px;
     }
-
     h3 {
         font-size: 28px;
     }
-
     .section {
         padding-left: 60px;
         padding-right: 60px;
     }
-
     #head2 {
         color: white !important;
         font-size: 48px;
     }
-
     #head1 {
         font-size: 56px;
     }
-
     .source {
-        width: 400px
+        width: 400px;
     }
-
     #about-text {
         width: 320px;
     }
-
     #portfolio {
         padding-left: 64px;
         padding-right: 64px;
         margin-left: 0px;
         margin-right: 0px;
     }
-
     #portfolio-header {
         padding-left: 16px;
     }
-
     .title-row {
         margin-top: 80px !important;
     }
     .project-icon {
         font-size: 178px;
+    }
+    .contacts {
+        margin-bottom: 48px;
     }
 }
 @media screen and (max-width: 400px) {
