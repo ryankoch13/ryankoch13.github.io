@@ -573,6 +573,7 @@
                 contact = document.getElementById('contact-me');
             // Sets canvas size to slightly larger than the contact me section
             window.addEventListener('resize', resizeCanvas, false);
+            window.addEventListener('click', resizeCanvas, false)
 
             function resizeCanvas() {
                 canvas.width = contact.clientWidth;
