@@ -785,6 +785,23 @@ canvas {
     }
 }
 
+@media screen and (max-height: 576px) {
+    #mySidebar {
+        display: none;
+    }
+    #closedSidebar {
+        display: none;
+    }
+    #sidebarContact {
+        display: none;
+    }
+    #main {
+        margin-left: 0px;
+    }
+    .blank {
+        padding-left: 0px;
+    }
+}
 /* Mobile */
 @media screen and (max-width: 768px) {
     .sidebar {
