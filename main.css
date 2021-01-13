@@ -599,6 +599,7 @@ canvas {
     top: 0;
     left: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
     /* Disable horizontal scroll */
     padding-top: 60px;
     /* Place content 60px from the top */
@@ -785,23 +786,6 @@ canvas {
     }
 }
 
-@media screen and (max-height: 576px) {
-    #mySidebar {
-        display: none;
-    }
-    #closedSidebar {
-        display: none;
-    }
-    #sidebarContact {
-        display: none;
-    }
-    #main {
-        margin-left: 0px;
-    }
-    .blank {
-        padding-left: 0px;
-    }
-}
 /* Mobile */
 @media screen and (max-width: 768px) {
     .sidebar {
@@ -874,5 +858,35 @@ canvas {
 @media screen and (max-width: 400px) {
     .project-icon {
         font-size: 128px;
+    }
+}
+/* Sidebar Height */
+@media screen and (max-height: 576px) {
+    #closedSidebar {
+        font-size: 28px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+    .sidebar {
+        padding-top: 40px;
+        padding-left: 24px;
+    }
+}
+@media screen and (max-height: 264px) {
+    #mySidebar {
+        display: none;
+    }
+    #closedSidebar {
+        display: none;
+    }
+    #sidebarContact {
+        display: none;
+    }
+    #main {
+        margin-left: 0px;
+    }
+    .blank {
+        padding-left: 0px;
     }
 }
