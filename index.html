@@ -45,7 +45,7 @@
         <a href="#contact"><i class="fab fa-angellist"></i> Contact Me.</a>
     </div>
     <!-- Main Start -->
-    <div id="main" onclick="closeNav()">
+    <div id="main">
         <div id="closedSidebar" onmouseover="openNav()">
             <i class="fas fa-bars" onclick="hueShift()" title="Do NOT click me!!"></i>
             <div id="sidebarContact">
@@ -56,7 +56,7 @@
             </div>
         </div>
         <!-- Hero Start -->
-        <div id="landing" class="jumbotron jumbotron-fluid">
+        <div id="landing" class="jumbotron jumbotron-fluid" onclick="closeNav()">
             <div class="section" id="hero-text">
                 <h1 class="display-4" id="head1">Ryan Koch here.</h1>
                 <div class="row blank">
@@ -85,7 +85,7 @@
             <div class="col-md-12"></div>
         </div>
         <!-- About start -->
-        <div class="container-fluid section" id="about">
+        <div class="container-fluid section" id="about" onclick="closeNav()">
             <h2 class="header">About Me.</h2>
             <div id="about-text">
                 <h3 class="subheader about-h">More than a job. </h3>
@@ -124,7 +124,7 @@
         </div>
         <!-- Portfolio Start -->
         <!-- Custom padding, not section class -->
-        <div class="fluid-container section" id="portfolio">
+        <div class="fluid-container section" id="portfolio" onclick="closeNav()">
             <div class="row blank">
                 <div class="col-md-12"></div>
             </div>
@@ -216,7 +216,7 @@
             <div class="col-md-12"></div>
         </div>
         <!-- Skills Start -->
-        <div class="fluid-container" id="skill-container">
+        <div class="fluid-container" id="skill-container" onclick="closeNav()">
             <div class="skill-background section">
                 <h2 class="header" id="technical">Technologies.</h2>
                 <!-- Languages Title -->
@@ -361,7 +361,7 @@
             <div class="col-md-12"></div>
         </div>
         <!-- Contact start -->
-        <div class="fluid-container section" id="contact-me">
+        <div class="fluid-container section" id="contact-me" onclick="closeNav()">
             <h2 class="header" id="contact">Contact Me.</h2>
             <!-- Contains full contact section -->
             <div class="row d-flex contact-section">
