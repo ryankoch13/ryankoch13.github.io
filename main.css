@@ -855,7 +855,7 @@ canvas {
         margin-bottom: 48px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 408px) {
     .project-icon {
         font-size: 128px;
     }
@@ -873,7 +873,7 @@ canvas {
         padding-left: 24px;
     }
 }
-@media screen and (max-height: 264px) {
+@media screen and (max-height: 408px) {
     #mySidebar {
         display: none;
     }
