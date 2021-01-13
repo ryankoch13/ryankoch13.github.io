@@ -47,12 +47,12 @@
     <!-- Main Start -->
     <div id="main">
         <div id="closedSidebar" onmouseover="openNav()">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" onclick="hueShift()" title="Do NOT click me!!"></i>
             <div id="sidebarContact">
-                <a href="https://github.com/ryankoch13"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ryan-koch13/"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:ryan@ryankoch.me"><i class="fas fa-envelope"></i></a>
-                <a href="https://twitter.com/RyanKoch_"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/ryankoch13"><i class="fab fa-github" title="GitHub"></i></a>
+                <a href="https://www.linkedin.com/in/ryan-koch13/"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
+                <a href="mailto:ryan@ryankoch.me"><i class="fas fa-envelope" title="Email"></i></a>
+                <a href="https://twitter.com/RyanKoch_"><i class="fab fa-twitter" title="Twitter"></i></a>
             </div>
         </div>
         <!-- Hero Start -->
@@ -464,6 +464,30 @@
         </div>
     </footer>
     <!-- Footer End -->
+    <!-- Color Rotate Script -->
+    <script>
+        const sidebar1 = document.querySelector('#mySidebar')
+        const sidebar2 = document.querySelector('#closedSidebar')
+        const landing = document.querySelector('#landing')
+        const about = document.querySelector('#about')
+        const portfolio = document.querySelector('#portfolio')
+        const skills = document.querySelector('#skill-container')
+        const contact = document.querySelector('#contact-me')
+        const footer = document.querySelector('.footer')
+        let rotate = 0
+        const hueShift = () => {
+            if (rotate !== 315){rotate += 45}
+            else {rotate = 0}
+            sidebar1.style.filter = `hue-rotate(${rotate}deg)`
+            sidebar2.style.filter = `hue-rotate(${rotate}deg)`
+            landing.style.filter = `hue-rotate(${rotate}deg)`
+            about.style.filter = `hue-rotate(${rotate}deg)`
+            portfolio.style.filter = `hue-rotate(${rotate}deg)`
+            skills.style.filter = `hue-rotate(${rotate}deg)`
+            contact.style.filter = `hue-rotate(${rotate}deg)`
+            footer.style.filter = `hue-rotate(${rotate}deg)`
+        }
+    </script>
     <!-- Post-Doc Scripts -->
     <script>
         // Sidebar scripts
@@ -570,11 +594,10 @@
         (function () {
             var canvas = document.getElementById('myCanvas'),
                 context = canvas.getContext('2d'),
-                contact = document.getElementById('contact-me');
+                contact = document.getElementById('contact-me')
             // Sets canvas size to slightly larger than the contact me section
-            window.addEventListener('resize', resizeCanvas, false);
+            window.addEventListener('resize', resizeCanvas, false)
             window.addEventListener('click', resizeCanvas, false)
-
             function resizeCanvas() {
                 canvas.width = contact.clientWidth;
                 canvas.height = 200 + contact.clientHeight;
@@ -583,8 +606,7 @@
                 }
             }
             // Randomly generates 8 circles}
-            resizeCanvas();
-
+            resizeCanvas()
             function drawStuff() {
                 // Had to play with the math to get the sizing and spacing right
                 var centerX = Math.floor(Math.random() * canvas.width);
