@@ -616,7 +616,6 @@ canvas {
     padding-top: 60px;
     /* Place content 60px from the top */
     transition: 0.4s;
-    /* 0.3 second transition effect to slide in the sidebar */
     transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
 }
 
@@ -632,7 +631,6 @@ canvas {
     font-weight: 500;
     color: black;
     display: block;
-    transition: 0.4s;
 }
 
 .sidebar a:hover {
@@ -751,7 +749,8 @@ canvas {
 /* Tablet */
 @media screen and (max-width: 992px) {
     .sidebar {
-        padding-top: 30px;
+        padding-top: 48px;
+        padding-left: 24px;
         transition: 0.3s;
     }
     .sidebar a {
@@ -802,7 +801,7 @@ canvas {
 @media screen and (max-width: 768px) {
     .sidebar {
         padding-top: 15px;
-        transition: 0.3s;
+        transition: 0.2s;
     }
     #mySidebar {
         display: none;
