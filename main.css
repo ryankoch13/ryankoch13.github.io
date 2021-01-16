@@ -631,6 +631,7 @@ canvas {
     font-weight: 500;
     color: black;
     display: block;
+    transition: 0.3s;
 }
 
 .sidebar a:hover {
