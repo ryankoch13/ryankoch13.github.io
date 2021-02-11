@@ -680,7 +680,7 @@ canvas {
 
 .tint {
     display: none;
-    position: absolute;
+    position: fixed;
     font-size: 32px;
     left: 24px;
     top: 24px;
