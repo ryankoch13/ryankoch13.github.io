@@ -688,6 +688,15 @@ canvas {
     color: salmon;
 }
 
+#hue {
+    color: black;
+    transition: 0.4s;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+#hue:hover {
+    color: purple;
+}
+
 /* ID styling */
 #about-text {
     width: 860px;
