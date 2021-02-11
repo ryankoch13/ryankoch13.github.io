@@ -133,6 +133,7 @@ canvas {
     border-radius: 10px;
     transition: 0.4s;
     padding-left: 40px;
+    height: 14rem;
 }
 
 #typed {
@@ -682,8 +683,8 @@ canvas {
     display: none;
     position: fixed;
     font-size: 32px;
-    left: 24px;
-    top: 24px;
+    left: 18px;
+    top: 18px;
     z-index: 100;
     color: salmon;
 }
@@ -728,7 +729,7 @@ canvas {
     }
 
     .source {
-        width: 800px
+        width: 800px;
     }
 
     #about-text {
