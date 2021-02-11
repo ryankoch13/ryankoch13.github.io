@@ -685,6 +685,7 @@ canvas {
     left: 24px;
     top: 24px;
     z-index: 100;
+    color: salmon;
 }
 
 /* ID styling */

@@ -476,6 +476,7 @@
         const skills = document.querySelector('#skill-container')
         const contact = document.querySelector('#contact-me')
         const footer = document.querySelector('.footer')
+        const tint = document.querySelector('.tint')
         let rotate = 0
         const hueShift = () => {
             if (rotate !== 315){rotate += 45}
@@ -488,6 +489,7 @@
             skills.style.filter = `hue-rotate(${rotate}deg)`
             contact.style.filter = `hue-rotate(${rotate}deg)`
             footer.style.filter = `hue-rotate(${rotate}deg)`
+            tint.style.filter = `hue-rotate(${rotate}deg)`
         }
     </script>
     <!-- Post-Doc Scripts -->
