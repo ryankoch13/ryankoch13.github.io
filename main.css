@@ -684,6 +684,7 @@ canvas {
     font-size: 32px;
     left: 24px;
     top: 24px;
+    z-index: 100;
 }
 
 /* ID styling */
