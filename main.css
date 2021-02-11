@@ -678,6 +678,14 @@ canvas {
     color: purple;
 }
 
+.tint {
+    display: none;
+    position: absolute;
+    font-size: 32px;
+    left: 24px;
+    top: 24px;
+}
+
 /* ID styling */
 #about-text {
     width: 860px;
@@ -712,8 +720,6 @@ canvas {
         width: 800px
     }
 
-    /* #head2 {color: white !important; font-size: 64px;}
-    #head1 {font-size: 72px;} */
     #about-text {
         width: 600px;
     }
@@ -800,6 +806,9 @@ canvas {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+    .tint {
+        display: block;
+    }
     .sidebar {
         padding-top: 15px;
         transition: 0.2s;
@@ -886,6 +895,9 @@ canvas {
     }
 }
 @media screen and (max-height: 408px) {
+    .tint {
+        display: block;
+    }
     #mySidebar {
         display: none;
     }

@@ -36,6 +36,7 @@
 
 <!-- Everything pretty much -->
 <body class="body" id="body" style="background-color:black; color:white">
+    <i class="tint fas fa-tint" onclick="hueShift()"></i>
     <!-- Sidebar start -->
     <div id="mySidebar" class="sidebar" onmouseleave="closeNav()">
         <a href="#landing"><i class="fas fa-igloo"></i> Home.</a>
@@ -502,8 +503,10 @@
 
         // Sets the width of the sidebar to 50 and the left margin of the page content to 40
         function closeNav() {
-            console.log(document.getElementById("body").clientWidth)
-            if (document.getElementById("body").clientWidth <= 768 || document.getElementById("body").clientHeight < 408) {
+            console.log(window.innerHeight)
+            if (window.innerHeight <= 408) {
+            document.getElementById("main").style.marginLeft = "0px"
+        }   else if (window.innerWidth <= 768) {
             document.getElementById("main").style.marginLeft = "0px"
         }   else {
             document.getElementById("mySidebar").style.width = "50px"
