@@ -691,6 +691,12 @@ canvas {
     top: 18px;
     z-index: 100;
     color: salmon;
+    transition: 0.4s;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.tint:hover {
+    color: purple;
 }
 
 #hue {
