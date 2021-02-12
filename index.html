@@ -501,8 +501,8 @@
         function openNav() {
             document.getElementById("mySidebar").style.width = "260px"
             document.getElementById("main").style.marginLeft = "140px"
-            document.getElementById("mySidebar").style.backgroundColor = "darksalmon"
-            document.getElementById("closedSidebar").style.backgroundColor = "darksalmon"
+            // document.getElementById("mySidebar").style.backgroundColor = "darksalmon"
+            // document.getElementById("closedSidebar").style.backgroundColor = "darksalmon"
         }
 
         // Sets the width of the sidebar to 50 and the left margin of the page content to 40
@@ -516,8 +516,8 @@
             document.getElementById("mySidebar").style.width = "50px"
             document.getElementById("closedSidebar").style.width = "50px"
             document.getElementById("main").style.marginLeft = "40px"
-            document.getElementById("mySidebar").style.backgroundColor = "salmon"
-            document.getElementById("closedSidebar").style.backgroundColor = "salmon"
+            // document.getElementById("mySidebar").style.backgroundColor = "salmon"
+            // document.getElementById("closedSidebar").style.backgroundColor = "salmon"
         }
         } 
         // Body background and hero text color changer
@@ -601,6 +601,22 @@
             scale: 0.5,
             interval: 150
         });
+    </script>
+    <!-- Scroll Saturation -->
+    <script>
+        window.addEventListener('scroll', () => {
+            let height = window.innerHeight / 10
+            console.log(height)
+            let y = (window.scrollY || window.pageYOffset) / (175 - height)
+            console.log(y)
+            y = y < 1 ? 1 : y
+            let sat = 100 - y
+            let light = 71 + (y / 6)
+            document.querySelector("#closedSidebar").style.backgroundColor = `hsl(6, ${sat}%, ${light}%)`
+            document.querySelector("#mySidebar").style.backgroundColor = `hsl(6, ${sat}%, ${light}%)`
+            document.querySelector(".tint").style.color = `hsl(6, ${sat}%, ${light}%)`
+
+        })
     </script>
     <!-- Contact Me Canvas and Circle Function -->
     <script>

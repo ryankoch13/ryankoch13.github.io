@@ -621,6 +621,7 @@ canvas {
 
 #mySidebar {
     width: 40px;
+    background-color: salmon;
 }
 
 /* The sidebar links */
@@ -666,7 +667,7 @@ canvas {
 #sidebarContact {
     position: fixed;
     bottom: 10px;
-    left: 10px;
+    left: 9px;
     z-index: 5;
     display: flex;
     flex-direction: column;
