@@ -516,7 +516,6 @@
 
         // Sets the width of the sidebar to 50 and the left margin of the page content to 40
         function closeNav() {
-            console.log(window.innerHeight)
             if (window.innerHeight <= 408) {
             document.getElementById("main").style.marginLeft = "0px"
         }   else if (window.innerWidth <= 768) {
@@ -529,6 +528,13 @@
             // document.getElementById("closedSidebar").style.backgroundColor = "salmon"
         }
         } 
+        window.addEventListener('resize', () => {
+            if (window.innerHeight <= 408) {
+                document.getElementById("main").style.marginLeft = "0px"
+            } else if (window.innerWidth <= 768) {
+                document.getElementById("main").style.marginLeft = "0px"
+            }
+        })
         // Body background and hero text color changer
         const [red, green, blue] = [255, 255, 255]
         const section1 = document.querySelector('.body')
