@@ -70,6 +70,8 @@ canvas {
     padding-right: 260px;
     padding-top: 40px;
     font-family: 'Raleway', sans-serif;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .border1-top {
@@ -285,12 +287,15 @@ canvas {
 
 /* Custom padding for portfolio section */
 #portfolio {
-    padding-left: 160px;
-    padding-right: 160px;
     background-image: url('bubbles.jpg');
     background-position: bottom;
     background-size: cover;
     padding-bottom: 80px;
+}
+
+#portfolio .section {
+    padding-left: 160px;
+    padding-right: 160px;
 }
 
 #portfolio-header {
@@ -745,10 +750,12 @@ canvas {
         width: 600px;
     }
     #portfolio {
-        padding-left: 120px;
-        padding-right: 120px;
         align-items: center;
         padding-bottom: 24px;
+    }
+    #portfolio .section {
+        padding-left: 120px;
+        padding-right: 120px;
     }
     #portfolio-header {
         padding-left: 60px;
@@ -807,9 +814,11 @@ canvas {
         width: 500px;
     }
     #portfolio {
+        align-items: space-between;
+    }
+    #portfolio .section {
         padding-left: 84px;
         padding-right: 84px;
-        align-items: space-between;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -921,7 +930,7 @@ canvas {
     #about-text {
         width: 320px;
     }
-    #portfolio {
+    #portfolio .section {
         padding-left: 64px;
         padding-right: 64px;
         margin-left: 0px;
