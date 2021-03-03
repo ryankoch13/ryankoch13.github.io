@@ -366,11 +366,11 @@ canvas {
 }
 
 .project:hover .project-icon {
-    color: grey;
+    -webkit-text-stroke-color: darkgrey;
 }
 
 .project:hover .project-text {
-    color: grey;
+    color: gray;
 }
 
 .project:hover .source-link {
@@ -392,8 +392,11 @@ canvas {
 .project-icon {
     font-size: 248px;
     white-space: nowrap;
-    color: salmon;
+    /* color: ; */
     text-decoration: none;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: salmon;
 }
 
 .project-row {
