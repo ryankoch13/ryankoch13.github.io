@@ -300,7 +300,8 @@ canvas {
 
 #portfolio-header {
     padding-left: 80px;
-    color: white;
+    color: lightgray;
+    mix-blend-mode: exclusion;
 }
 
 /* Project Tiles */
