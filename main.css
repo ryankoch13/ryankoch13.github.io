@@ -368,6 +368,7 @@ canvas {
 
 .project:hover .project-icon {
     -webkit-text-stroke-color: darkgrey;
+    -webkit-text-fill-color: black;
 }
 
 .project:hover .project-text {
@@ -395,7 +396,7 @@ canvas {
     white-space: nowrap;
     /* color: ; */
     text-decoration: none;
-    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: salmon;
 }
