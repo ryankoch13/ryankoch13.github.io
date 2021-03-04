@@ -649,7 +649,7 @@
             function resizeCanvas() {
                 canvas.width = contact.clientWidth;
                 canvas.height = 200 + contact.clientHeight;
-                for (i = 0; i < 8; i++) {
+                for (i = 0; i < 10; i++) {
                     drawStuff();
                 }
             }
@@ -659,7 +659,7 @@
                 // Had to play with the math to get the sizing and spacing right
                 var centerX = Math.floor(Math.random() * canvas.width);
                 var centerY = 80 + Math.floor(Math.random() * canvas.height);
-                var radius = Math.floor(Math.random() * 85);
+                var radius = Math.floor(Math.random() * 150);
                 //  Defines what happens when they overlap
                 context.globalCompositeOperation = "multiply";
                 context.beginPath();
