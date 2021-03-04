@@ -661,10 +661,10 @@
                 var centerY = 80 + Math.floor(Math.random() * canvas.height);
                 var radius = Math.floor(Math.random() * 150);
                 //  Defines what happens when they overlap
-                context.globalCompositeOperation = "multiply";
+                context.globalCompositeOperation = "color-burn";
                 context.beginPath();
                 context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-                context.fillStyle = 'dimgrey';
+                context.fillStyle = 'gray';
                 context.fill();
                 // Optional border / Counldn't decide if I wanted it or not
                 // context.lineWidth = 3;
