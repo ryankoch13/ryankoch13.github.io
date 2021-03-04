@@ -28,7 +28,7 @@ body {
 h2 {
     font-size: 72px;
     color: aquamarine;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h3 {
@@ -39,7 +39,7 @@ h3 {
 
 p {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 175%;
 }
 
@@ -230,9 +230,6 @@ canvas {
     -webkit-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    /* -webkit-transition: color 0.5s ease-out;
-    -ms-transition: color 0.5s ease-out;
-    transition: color 0.5s ease-out; */
 }
 
 .ico {
@@ -359,7 +356,7 @@ canvas {
 
 .project {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     opacity: 1;
     transition: 0.4s;
@@ -392,7 +389,7 @@ canvas {
 .project-text {
     mix-blend-mode: normal !important;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     color: salmon;
 }
 
@@ -403,6 +400,7 @@ canvas {
 .project-icon {
     font-size: 248px;
     white-space: nowrap;
+    font-weight: 800;
     /* color: ; */
     text-decoration: none;
     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
@@ -472,7 +470,6 @@ canvas {
     transition-duration: 0.5s;
     border: 5px solid white;
 }
-
 .hvr-br:before {
     content: "";
     position: absolute;
@@ -494,8 +491,6 @@ canvas {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
-
 .hvr-br:hover:before,
 .hvr-br:focus:before,
 .hvr-br:active:before {
@@ -503,54 +498,6 @@ canvas {
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
     transition-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
-}
-
-.hvr-sl {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-
-.hvr-sl:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("./waves.gif");
-    border-radius: 10px;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-.hvr-sl:hover,
-.hvr-sl:focus,
-.hvr-sl:active {
-    color: white;
-}
-
-.hvr-sl:hover:before,
-.hvr-sl:focus:before,
-.hvr-sl:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
 }
 
 .link {
@@ -737,7 +684,7 @@ canvas {
 /* Hero Headers */
 #head1 {
     font-size: 96px;
-    font-weight: 900;
+    font-weight: 600;
     padding-top: 40px;
     color: white;
 }
