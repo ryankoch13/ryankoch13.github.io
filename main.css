@@ -224,9 +224,15 @@ canvas {
     text-decoration: underline;
     font-weight: 500;
     height: 200px;
-    transition-duration: 0.5s;
-    transition-property: filter;
-    -webkit-transition: -webkit-filter 0.5s ease-out;
+    /* transition-duration: 0.5s; */
+    /* transition-property: filter; */
+    /* -webkit-transition: -webkit-filter 0.5s ease-out; */
+    -webkit-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    /* -webkit-transition: color 0.5s ease-out;
+    -ms-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out; */
 }
 
 .ico {
@@ -241,8 +247,12 @@ canvas {
 
 /* Skill Hover Effects */
 .skills:hover {
+    /* opacity: 0.8; */
+    /* filter: saturate(0%); */
+    background-color: #202020;
     opacity: 0.8;
-    filter: saturate(0%);
+    color: white;
+    
 }
 
 .hvr-oo {
@@ -263,8 +273,8 @@ canvas {
     right: 0;
     bottom: 0;
     left: 0;
-    -webkit-transition-duration: 0.6s ease-out;
-    transition-duration: 0.6s;
+    -webkit-transition-duration: 0.4s ease-out;
+    transition-duration: 0.4s;
     -webkit-transition-property: top, right, bottom, left;
     transition-property: top, right, bottom, left;
 }
@@ -276,7 +286,7 @@ canvas {
     right: -8px;
     bottom: -8px;
     left: -8px;
-    border: darkcyan solid 4px;
+    border: gray solid 4px;
 }
 
 .tooltip-inner {
