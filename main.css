@@ -118,8 +118,10 @@ canvas {
 /* Jumbotron */
 
 .jumbotron {
-    background-image: url('repeated-square-dark.png');
+    background-image: url('curls.png');
     margin-bottom: 0px;
+    background-color: rgba(250, 128, 114, 0.048);
+    background-blend-mode: color-dodge;
     background-attachment: fixed;
     /* background-position: center; */
     background-repeat: repeat;
