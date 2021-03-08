@@ -211,8 +211,8 @@ canvas {
 }
 
 .skill-row {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .skills {
@@ -530,6 +530,14 @@ canvas {
 
 /* Divder rows */
 .blank {
+    height: 60px;
+    width: 100%;
+    margin-left: 0px;
+    overflow-x: hidden;
+    padding-left: 11px;
+}
+
+.blank2 {
     height: 100px;
     width: 100%;
     margin-left: 0px;
