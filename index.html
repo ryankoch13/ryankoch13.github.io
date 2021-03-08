@@ -540,7 +540,7 @@
         const [red, green, blue] = [255, 255, 255]
         const section1 = document.querySelector('.body')
         // const section2 = document.querySelector('#head1')
-        const section3 = document.querySelector('#head2')
+        // const section3 = document.querySelector('#head2')
         window.addEventListener('scroll', () => {
             let y = -1 + (window.scrollY || window.pageYOffset) /
                 200 // Transition rate and initial value for scroll color
@@ -548,8 +548,8 @@
             let [r, g, b] = [red / y, green / y, blue / y].map(Math.round)
             section1.style.backgroundColor =
                 `rgb(${r}, ${g}, ${b})` // Assigning scroll offset to background of main
-            // section2.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the co-main header
-            section3.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the co-main header
+            // section2.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the main header
+            // section3.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the co-main header
         })
         // Typewriter
         var typed = new Typed('#typed', {
@@ -594,15 +594,15 @@
             reset: true
         });
         ScrollReveal().reveal('.about-p', {
-            delay: 500,
-            duration: 600, 
+            delay: 400,
+            duration: 500, 
             easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
             scale: 0.2,
             reset: true
         });
         ScrollReveal().reveal('.project', {
-            delay: 500,
-            duration: 600, 
+            delay: 300,
+            duration: 500, 
             easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
             scale: 0.5,
             interval: 300,
@@ -617,7 +617,7 @@
             reset: true
         });
         ScrollReveal().reveal('.contacts', {
-            delay: 600,
+            delay: 400,
             duration: 500, 
             easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
             scale: 0.5,
@@ -653,7 +653,7 @@
             function resizeCanvas() {
                 canvas.width = contact.clientWidth;
                 canvas.height = 200 + contact.clientHeight;
-                for (i = 0; i < 8; i++) {
+                for (i = -2; i < (contact.clientWidth / 120); i++) {
                     drawStuff();
                 }
             }
@@ -665,7 +665,7 @@
                 var centerY = 80 + Math.floor(Math.random() * canvas.height);
                 var radius = Math.floor(Math.random() * 150);
                 //  Defines what happens when they overlap
-                context.globalCompositeOperation = "multiply";
+                context.globalCompositeOperation = "color-burn";
                 context.beginPath();
                 context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
                 context.fillStyle = 'gray';

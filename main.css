@@ -47,7 +47,7 @@ p {
 canvas {
     position: absolute;
     z-index: -1;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: color-burn; */
 }
 
 /* Main section */
@@ -61,7 +61,7 @@ canvas {
 
 #main ::selection {
     background-color: darksalmon;
-    color: white;
+    color: aquamarine;
 }
 
 /* Major classes */
@@ -285,7 +285,7 @@ canvas {
     right: -8px;
     bottom: -8px;
     left: -8px;
-    border: darksalmon solid 4px;
+    border: gray solid 4px;
 }
 
 .tooltip-inner {
@@ -598,6 +598,10 @@ canvas {
 #mySidebar {
     width: 40px;
     background-color: salmon;
+}
+
+#mySidebar {
+    page-break-inside: avoid;
 }
 
 /* The sidebar links */
