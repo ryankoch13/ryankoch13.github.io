@@ -712,7 +712,11 @@ canvas {
 }
 
 /* Mediaqueries */
-
+@media screen and (max-width: 1400px) {
+.contact-link {
+    padding: 0px .75rem;
+}
+}
 /* Small Computers */
 @media screen and (max-width: 1200px) {
     .section {
@@ -747,9 +751,6 @@ canvas {
     }
     .title-row {
         margin-top: 20px !important;
-    }
-    .contact-link {
-        padding: 0px 1rem;
     }
 }
 
