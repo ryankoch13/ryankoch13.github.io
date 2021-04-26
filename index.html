@@ -642,9 +642,7 @@
     <script>
         window.addEventListener('scroll', () => {
             let height = window.innerHeight / 10
-            console.log(height)
             let y = (window.scrollY || window.pageYOffset) / (175 - height)
-            console.log(y)
             y = y < 1 ? 1 : y
             let sat = 100 - y
             let light = 71 + (y / 6)
