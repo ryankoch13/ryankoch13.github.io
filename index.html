@@ -549,26 +549,6 @@
                 document.getElementById("main").style.marginLeft = "0px"
             }
         })
-        // Body background and hero text color changer
-        const colorChanger = () => {
-            const [red, green, blue] = [255, 255, 255]
-        const section1 = document.querySelector('.body')
-        
-        // const section2 = document.querySelector('#head1')
-        // const section3 = document.querySelector('#head2')
-        window.addEventListener('scroll', () => {
-            let y = -1 + (window.scrollY || window.pageYOffset) /
-                200 // Transition rate and initial value for scroll color
-            y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
-            let [r, g, b] = [red / y, green / y, blue / y].map(Math.round)
-            section1.style.backgroundColor =
-                `rgb(${r}, ${g}, ${b})` // Assigning scroll offset to background of main
-            // section2.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the main header
-            // section3.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the co-main header
-        })
-        }
-        const isMobile = navigator.userAgentData.mobile
-        !isMobile ? colorChanger() : null
         // Typewriter
         var typed = new Typed('#typed', {
             strings: ['I am passionate about... presence.', 
@@ -642,6 +622,30 @@
             interval: 150,
             reset: true
         });
+    </script>
+    <!-- Color Changer -->
+    <script>
+        // Body background and hero text color changer
+        const colorChanger = () => {
+            const [red, green, blue] = [255, 255, 255]
+        const section1 = document.querySelector('.body')
+        
+        // const section2 = document.querySelector('#head1')
+        // const section3 = document.querySelector('#head2')
+        window.addEventListener('scroll', () => {
+            let y = -1 + (window.scrollY || window.pageYOffset) /
+                200 // Transition rate and initial value for scroll color
+            y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+            let [r, g, b] = [red / y, green / y, blue / y].map(Math.round)
+            section1.style.backgroundColor =
+                `rgb(${r}, ${g}, ${b})` // Assigning scroll offset to background of main
+            // section2.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the main header
+            // section3.style.color = `rgb(${r}, ${g}, ${b})` // Assigning to the co-main header
+        })
+        }
+        // const isMobile = navigator.userAgentData.mobile
+        // !isMobile ? colorChanger() : null
+        colorChanger()
     </script>
     <!-- Scroll Saturation -->
     <script>
