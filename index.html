@@ -25,7 +25,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#fa8072">
-    <meta name="theme-color" content="#00ffbf" id="theme-color">
+    <meta name="theme-color" content="#00ffbf">
     <!-- Script/CDN imports -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -501,7 +501,6 @@
         const footer = document.querySelector('.footer')
         const tint = document.querySelector('.tint')
         const sidebarContact = document.querySelector('#sidebarContact')
-        const theme = document.querySelection('#theme-color')
         let rotate = 0
         const hueShift = () => {
             if (rotate !== 315){rotate += 45}
@@ -516,7 +515,6 @@
             footer.style.filter = `hue-rotate(${rotate}deg)`
             tint.style.filter = `hue-rotate(${rotate}deg)`
             sidebarContact.style.filter = `hue-rotate(${rotate}deg)`
-            theme.style.filter = `hue-rotate(${rotate}deg)`
         }
     </script>
     <!-- Post-Doc Scripts -->
