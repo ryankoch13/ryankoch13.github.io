@@ -293,6 +293,7 @@ canvas {
 /* Custom padding for portfolio section */
 #portfolio {
 	background-image: url("darkfloral.png");
+	background-size: 128px;
 	background-attachment: fixed;
 	padding-bottom: 80px;
 	/* background-color: rgba(127, 255, 212, 0.2);
