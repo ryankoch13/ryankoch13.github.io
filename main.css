@@ -241,7 +241,7 @@ canvas {
 	line-height: 1.75;
 }
 
-.skill-text .fab {
+.skill-text .ico {
 	line-height: 1.5;
 }
 
@@ -365,7 +365,7 @@ canvas {
 	text-align: center;
 	opacity: 0.8;
 	transition: 0.4s;
-	background-color: rgb(75,75,75);
+	background-color: rgb(50,50,50);
 	mix-blend-mode: difference;
 	border-radius: 10px;
 	padding-top: 10px;
@@ -388,7 +388,7 @@ canvas {
 .project-text {
 	mix-blend-mode: normal !important;
 	opacity: 1 !important;
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: 600;
 	color: white;
 }
@@ -858,6 +858,9 @@ canvas {
 	.sidebar {
 		padding-top: 15px;
 		transition: 0.2s;
+	}
+	.project-text {
+		font-size: 28px;
 	}
 	#mySidebar {
 		display: none;
