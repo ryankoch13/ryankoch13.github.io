@@ -241,6 +241,10 @@ canvas {
 	line-height: 1.75;
 }
 
+.skill-text .fab {
+	line-height: 1.5;
+}
+
 /* Skill Hover Effects */
 .skills:hover {
 	/* opacity: 0.8; */
@@ -359,9 +363,10 @@ canvas {
 	font-size: 24px;
 	font-weight: 600;
 	text-align: center;
-	opacity: 1;
+	opacity: 0.8;
 	transition: 0.4s;
-	background-color: black;
+	background-color: rgb(75,75,75);
+	mix-blend-mode: difference;
 	border-radius: 10px;
 	padding-top: 10px;
 }
@@ -382,9 +387,10 @@ canvas {
 
 .project-text {
 	mix-blend-mode: normal !important;
-	font-size: 24px;
+	opacity: 1 !important;
+	font-size: 28px;
 	font-weight: 600;
-	color: salmon;
+	color: white;
 }
 
 .project:hover a {
@@ -929,5 +935,25 @@ canvas {
 	}
 	h2 {
 		font-size: 36px;
+	}
+}
+@media screen and (max-width: 312px) {
+	.project-icon {
+		font-size: 112px;
+	}
+	.project-text {
+		font-size: 24px;
+	}
+	.skill-text {
+		font-size: 18px;
+	}
+	.skill-text .ico {
+		font-size: 48;
+	}
+	#about-text {
+		width: 200px;
+	}
+	h2 {
+		font-size: 28px;
 	}
 }
