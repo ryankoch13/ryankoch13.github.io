@@ -35,6 +35,7 @@ h3 {
 	font-size: 48px;
 	color: rgb(232, 232, 232);
 	font-weight: 600;
+	line-height: 1.5,
 }
 
 p {
@@ -220,7 +221,6 @@ canvas {
 	color: black;
 	align-items: center;
 	justify-content: center;
-	text-decoration: underline;
 	font-weight: 500;
 	height: 200px;
 	/* transition-duration: 0.5s; */
@@ -362,7 +362,6 @@ canvas {
 	opacity: 1;
 	transition: 0.4s;
 	background-color: black;
-	border: 5px solid darksalmon;
 	border-radius: 10px;
 	padding-top: 10px;
 }
@@ -370,7 +369,6 @@ canvas {
 .project:hover {
 	mix-blend-mode: difference;
 	color: black;
-	border: 5px solid black;
 }
 
 .project:hover .project-text {
@@ -454,7 +452,7 @@ canvas {
 }
 
 .form-text {
-	text-decoration: underline;
+
 }
 
 /* Contact Hover Effects */
