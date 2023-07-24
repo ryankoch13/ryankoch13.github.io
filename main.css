@@ -740,6 +740,9 @@ canvas {
 	#portfolio-header {
 		padding-left: 60px;
 	}
+	h3 {
+		font-size: 36px;
+	}
 	.project {
 		margin-bottom: 48px;
 	}
@@ -769,9 +772,6 @@ canvas {
 	}
 	h2 {
 		font-size: 64px;
-	}
-	h3 {
-		font-size: 36px;
 	}
 	.section {
 		padding-left: 80px;
