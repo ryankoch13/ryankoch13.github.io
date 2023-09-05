@@ -570,6 +570,12 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
         // Scroll Reveals
+        ScrollReveal().reveal('#head1', {
+            duration: 400, 
+            easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
+            scale: 0.5,
+            // reset: true
+        });
         ScrollReveal().reveal('#head2', {
             delay: 200,
             duration: 600, 
@@ -578,49 +584,43 @@
             reset: true
         });
         ScrollReveal().reveal('.source', {
-            delay: 500,
+            delay: 400,
             duration: 600, 
             easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
             scale: 0.5,
-            reset: true
         });
         ScrollReveal().reveal('.about-h', {
-            delay: 400,
+            delay: 100,
             duration: 600, 
             easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
             scale: 0.2,
-            reset: true
         });
         ScrollReveal().reveal('.about-p', {
-            delay: 400,
+            delay: 100,
             duration: 500, 
             easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
             scale: 0.2,
-            reset: true
         });
         ScrollReveal().reveal('.project', {
-            delay: 300,
-            duration: 500, 
-            easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
-            scale: 0.5,
-            interval: 300,
-            reset: true
-        });
-        ScrollReveal().reveal('.skills', {
-            delay: 300,
+            delay: 100,
             duration: 400, 
             easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
             scale: 0.5,
+            interval: 300,
+        });
+        ScrollReveal().reveal('.skills', {
+            delay: 100,
+            duration: 300, 
+            easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
+            scale: 0.5,
             interval: 120,
-            reset: true
         });
         ScrollReveal().reveal('.contacts', {
-            delay: 400,
-            duration: 500, 
+            delay: 100,
+            duration: 300, 
             easing: 'cubic-bezier(0.33, 1, 0.68, 1)',
             scale: 0.5,
             interval: 150,
-            reset: true
         });
     </script>
     <!-- Color Changer -->
