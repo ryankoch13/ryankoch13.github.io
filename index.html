@@ -65,9 +65,10 @@
     <!-- Sidebar start -->
     <div id="mySidebar" class="sidebar" onmouseleave="closeNav()">
         <a href="#landing"><i class="fas fa-igloo"></i> Home</a>
-        <a href="#about"><i class="fas fa-brain"></i> About Me</a>
-        <a href="#portfolio"><i class="fas fa-palette"></i> Portfolio</a>
         <a href="#technical"><i class="fas fa-bezier-curve"></i> Technologies</a>
+        <a href="#portfolio"><i class="fas fa-palette"></i> Portfolio</a>
+        
+        <a href="#about"><i class="fas fa-brain"></i> About Me</a>
         <a href="#contact"><i class="fab fa-angellist"></i> Contact Me</a>
     </div>
     <!-- Main Start -->
@@ -83,12 +84,12 @@
                     <div class="col-md-12"></div>
                 </div>
                 <h2 id="head2">Welcome to my personal
-                    site -- please enjoy this sample of my design philosphy and code :]</h2>
+                    site -- please enjoy this sample of my design and code :]</h2>
                 <div class="row blank">
                     <div class="col-md-12"></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-10 offset-2 source hvr-ri">
+                    <div class="col-md-10 offset-2 source hvr-ri" onclick="hueShift()">
                         <h3 id="typed"></h3>
                     </div>
                 </div>
@@ -100,139 +101,6 @@
         <!-- Hero End -->
         <div class="row blank2">
             <div class="col-md-12 border1-top"></div>
-        </div>
-        <div class="row blank">
-            <div class="col-md-12"></div>
-        </div>
-        <!-- About start -->
-        <div class="container-fluid section" id="about" onclick="closeNav()">
-            <h2 class="header">About Me</h2>
-            <div id="about-text">
-                <h3 class="subheader about-h">More than a job </h3>
-                <p class="about-p">Hi, my name is Ryan Koch, and I am a web developer in San Diego.</p>
-                <p class="about-p">For me, that means I get to do some of my favorite things in the world, nerd out about technology and
-                    solve logical problems. I chose the field of coding and computer science more generally because I’ve
-                    always had a deep love for science and creative expression. </p>
-                <h3 class="subheader about-h">Late nights with Carl Sagan </h3>
-                <p class="about-p">I remember growing up watching Discovery documentaries about physics and astronomy and being so inspired. It led
-                    me
-                    to originally go to college for chemical engineering. After a couple of years though I found my
-                    true
-                    love. A place where I could both watch the cutting edge of technological innovation and bring value
-                    to
-                    people's lives with functional applications. </p>
-                <h3 class="subheader about-h">Creativity meets logic </h3>
-                <p class="about-p">I’ve always felt the need to express myself creatively. Through coding I can do that. Sometimes it
-                    comes
-                    as solving a problem as efficiently and elegantly as possible, working hours on a solution that in
-                    the
-                    end looks so obvious you can’t believe you didn’t think of it sooner. Other times it comes as
-                    building a
-                    functional and aesthetically pleasing user interface that brightens people’s day. If you've made it this far, I
-                    appreciate your time and I hope one day we can make something amazing together! </p>
-            </div>
-        </div>
-        <!-- About End -->
-        <div class="row blank">
-            <div class="col-md-12"></div>
-        </div>
-        <div class="row blank">
-            <div class="col-md-12"></div>
-        </div>
-        <div class="row blank2">
-            <div class="col-md-12 border2-top"></div>
-        </div>
-        <!-- Portfolio Start -->
-        <!-- Custom padding, not section class -->
-        <div id="portfolio" onclick="closeNav()">
-        <div class="fluid-container section">
-            <div class="row blank">
-                <div class="col-md-12"></div>
-            </div>
-            <h2 class="header" id="portfolio-header">Portfolio</h2>
-            <!-- Projects -->
-            <div class="row project-row justify-content-around">
-                <div class="col-xl-4 col-lg-6 col-md-12">
-                    <div class="col-lg-12 hvr-so project"
-                        data-toggle="tooltip"
-                        data-html="true"
-                        title="<p>This is an apartment listing app I made with React and Ruby on Rails</p>">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <a class="project-text" href="https://secure-bastion-88696.herokuapp.com/">
-                                    Lofty Apartments
-                                </a>
-                            </div>
-                            <div class="col-lg-12">
-                                <a class="project-icon" href="https://secure-bastion-88696.herokuapp.com/">
-                                    { }
-                                </a>
-                                </div>
-                            <div class="col-lg-12 source-link">
-                                <a class="source-link" href="https://github.com/ryankoch13/apartment-app-ryankoch13">
-                                    Source Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-12">
-                    <div class="col-lg-12 hvr-so project"
-                        data-toggle="tooltip"
-                        data-html="true"
-                        title="<p>This is a React on Rails app I worked on with a team of other developers</p>">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <a class="project-text" href="https://mysterious-woodland-85267.herokuapp.com/">
-                                    Pet Wellness App
-                                </a>
-                            </div>
-                            <div class="col-lg-12">
-                                <a class="project-icon" href="https://mysterious-woodland-85267.herokuapp.com/">
-                                    { }
-                                </a>
-                            </div>
-                            <div class="col-lg-12 source-link">
-                                <a class="source-link" href="https://github.com/CodeBusters2020/PetWellnessApp">
-                                    Source Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-12">
-                    <div class="col-lg-12 hvr-so project"
-                        data-toggle="tooltip"
-                        data-html="true"
-                        title="<p>This is a real-time chat app that I made with Node.js, Express, Socket.io, and React</p>">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <a class="project-text" href="https://ryanchat.netlify.app">
-                                    RyanChat
-                                </a>
-                            </div>
-                            <div class="col-lg-12">
-                                <a class="project-icon" href="https://ryanchat.netlify.app">
-                                    { }
-                                </a>
-                            </div>
-                            <div class="col-lg-12 source-link">
-                                <a class="source-link" href="https://github.com/ryankoch13/SocketIO-Node-ChatApp">
-                                    Source Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="row blank">
-                <div class="col-md-12"></div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
-        <div class="row blank2">
-            <div class="col-md-12 border2-bottom"></div>
         </div>
         <div class="row blank">
             <div class="col-md-12"></div>
@@ -397,7 +265,146 @@
                 </div> -->
             </div>
         </div>
+        
         <!-- Skills End -->
+        <div class="row blank">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row blank">
+            <div class="col-md-12"></div>
+        </div>
+        
+        <div class="row blank2">
+            <div class="col-md-12 border2-top"></div>
+        </div>
+        <!-- Portfolio Start -->
+        <!-- Custom padding, not section class -->
+        <div id="portfolio" onclick="closeNav()">
+        <div class="fluid-container section">
+            <div class="row blank">
+                <div class="col-md-12"></div>
+            </div>
+            <h2 class="header" id="portfolio-header">Portfolio</h2>
+            <!-- Projects -->
+            <div class="row project-row justify-content-around">
+                <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-lg-12 hvr-so project"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        title="<p>This is an apartment listing app I made with React and Ruby on Rails</p>">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a class="project-text" href="https://secure-bastion-88696.herokuapp.com/">
+                                    Lofty Apartments
+                                </a>
+                            </div>
+                            <div class="col-lg-12">
+                                <a class="project-icon" href="https://secure-bastion-88696.herokuapp.com/">
+                                    { }
+                                </a>
+                                </div>
+                            <div class="col-lg-12 source-link">
+                                <a class="source-link" href="https://github.com/ryankoch13/apartment-app-ryankoch13">
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-lg-12 hvr-so project"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        title="<p>This is a React on Rails app I worked on with a team of other developers</p>">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a class="project-text" href="https://mysterious-woodland-85267.herokuapp.com/">
+                                    Pet Wellness App
+                                </a>
+                            </div>
+                            <div class="col-lg-12">
+                                <a class="project-icon" href="https://mysterious-woodland-85267.herokuapp.com/">
+                                    { }
+                                </a>
+                            </div>
+                            <div class="col-lg-12 source-link">
+                                <a class="source-link" href="https://github.com/CodeBusters2020/PetWellnessApp">
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-lg-12 hvr-so project"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        title="<p>This is a real-time chat app that I made with Node.js, Express, Socket.io, and React</p>">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a class="project-text" href="https://ryanchat.netlify.app">
+                                    RyanChat
+                                </a>
+                            </div>
+                            <div class="col-lg-12">
+                                <a class="project-icon" href="https://ryanchat.netlify.app">
+                                    { }
+                                </a>
+                            </div>
+                            <div class="col-lg-12 source-link">
+                                <a class="source-link" href="https://github.com/ryankoch13/SocketIO-Node-ChatApp">
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row blank">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+        <div class="row blank2">
+            <div class="col-md-12 border2-bottom"></div>
+        </div>
+        
+        <!-- About start -->
+        <div class="row blank">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="container-fluid section" id="about" onclick="closeNav()">
+            <h2 class="header">About Me</h2>
+            <div id="about-text">
+                <h3 class="subheader about-h">More than a job </h3>
+                <p class="about-p">Hi, my name is Ryan Koch, and I am a web developer in San Diego.</p>
+                <p class="about-p">For me, that means I get to do some of my favorite things in the world, nerd out about technology and
+                    solve logical problems. I chose the field of coding and computer science more generally because I’ve
+                    always had a deep love for science and creative expression. </p>
+                <h3 class="subheader about-h">Late nights with Carl Sagan </h3>
+                <p class="about-p">I remember growing up watching Discovery documentaries about physics and astronomy and being so inspired. It led
+                    me
+                    to originally go to college for chemical engineering. After a couple of years though I found my
+                    true
+                    love. A place where I could both watch the cutting edge of technological innovation and bring value
+                    to
+                    people's lives with functional applications. </p>
+                <h3 class="subheader about-h">Creativity meets logic </h3>
+                <p class="about-p">I’ve always felt the need to express myself creatively. Through coding I can do that. Sometimes it
+                    comes
+                    as solving a problem as efficiently and elegantly as possible, working hours on a solution that in
+                    the
+                    end looks so obvious you can’t believe you didn’t think of it sooner. Other times it comes as
+                    building a
+                    functional and aesthetically pleasing user interface that brightens people’s day. If you've made it this far, I
+                    appreciate your time and I hope one day we can make something amazing together! </p>
+            </div>
+        </div>
+        <div class="row blank">
+            <div class="col-md-12"></div>
+        </div>
+        <!-- About End -->
         <div class="row blank">
             <div class="col-md-12"></div>
         </div>
